@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         animator = GetComponentInChildren<Animator>();
     }
     // Start is called before the first frame update
@@ -13,8 +14,10 @@ public class Player : MonoBehaviour
     {
 
     }
-
+    public static Player instance;
     public float speed = 3f;
+    public GameObject bullet;
+    public Transform bulletPosition;
 
     // Update is called once per frame
     void Update()
@@ -34,6 +37,14 @@ public class Player : MonoBehaviour
             move.Normalize();
             transform.Translate(speed * move * Time.deltaTime, Space.World);
             transform.forward = move; //이동하는 방향 바라보게 한다.
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            animator.Play("Shoot");
+            Instantiate(bullet, bulletPosition.position, bulletPosition.rotation);
         }
 
     }
