@@ -2,6 +2,12 @@
 
 public class Player : MonoBehaviour
 {
+    Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
     // Start is called before the first frame update
     void Start()
     {
