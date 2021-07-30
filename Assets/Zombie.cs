@@ -16,7 +16,7 @@ public class Zombie : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
 
-        //target = FindObjectOfType<Player>.
+        target = FindObjectOfType<Player>().transform;
 
         while (hp > 0)
         {
