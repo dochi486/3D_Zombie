@@ -6,7 +6,7 @@ public class Zombie : MonoBehaviour
 {
     public Transform target;
     NavMeshAgent agent;
-    private int hp;
+    private int hp = 100;
     Animator animator;
 
 
