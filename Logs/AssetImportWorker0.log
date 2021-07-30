@@ -1,0 +1,468 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.13f1 (71691879b7f5) revision 7432472'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1110; Version 2009; 64bit' Language: 'ko' Physical Memory: 32670 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/topms/Documents/GitHub/3D_Zombie
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+1745
+Successfully changed project path to: C:/Users/topms/Documents/GitHub/3D_Zombie
+C:/Users/topms/Documents/GitHub/3D_Zombie
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 20.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.13f1 (71691879b7f5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/topms/Documents/GitHub/3D_Zombie/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2503)
+    Vendor:   
+    VRAM:     12143 MB
+    Driver:   30.0.14.7111
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56036
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002195 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 20.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.829 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003078 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.672 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1391 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.4 MB.
+System memory in use after: 67.4 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1823.
+Total: 1.589400 ms (FindLiveObjects: 0.118000 ms CreateObjectMapping: 0.030400 ms MarkObjects: 1.378200 ms  DeleteObjects: 0.062000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Tiny_Toony_City_Demo/Scenes
+  artifactKey: Guid(0c68cf5d30aead6459becca5b3602a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny_Toony_City_Demo/Scenes using Guid(0c68cf5d30aead6459becca5b3602a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4197ea791422b4c13cda04805291be95') in 0.008720 seconds 
+  Import took 0.010509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Tiny_Toony_City_Demo
+  artifactKey: Guid(e0acbf77d96abcf4995389c13668a4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny_Toony_City_Demo using Guid(e0acbf77d96abcf4995389c13668a4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30bbc4540bd5ffdc55ad8d3b82d42dcd') in 0.004033 seconds 
+  Import took 0.005475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.238907 seconds.
+  path: Assets/Tiny_Toony_City_Demo/Scenes/Demo_Scene.unity
+  artifactKey: Guid(b32f9224a7f8a6f4eb5a631e4ece1fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny_Toony_City_Demo/Scenes/Demo_Scene.unity using Guid(b32f9224a7f8a6f4eb5a631e4ece1fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6d224fa3ce9def23d8066db37c578f') in 0.016176 seconds 
+  Import took 0.018816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.461057 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_female.prefab
+  artifactKey: Guid(2db03e7c8a8135146b280e5da7e0289c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_female.prefab using Guid(2db03e7c8a8135146b280e5da7e0289c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16ca44bc439fff908a159238b1d189c') in 0.148151 seconds 
+  Import took 0.150197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_male_B.prefab
+  artifactKey: Guid(907fd825e3988774caab4234b943bf44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_male_B.prefab using Guid(907fd825e3988774caab4234b943bf44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5a42b3d4b5e92db1a2597e115de83c1') in 0.022254 seconds 
+  Import took 0.023914 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_zombie.prefab
+  artifactKey: Guid(b14953694d54eea4eb66f453e525024c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_zombie.prefab using Guid(b14953694d54eea4eb66f453e525024c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9fec9aac49d3967adf17293348b400') in 0.016276 seconds 
+  Import took 0.018002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_police.prefab
+  artifactKey: Guid(47a3741b253f088469eedd6d403dd89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_police.prefab using Guid(47a3741b253f088469eedd6d403dd89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa0a5ad846b0684a476a4ddfa265f6f') in 0.013294 seconds 
+  Import took 0.015043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_male_A.prefab
+  artifactKey: Guid(6fb37f825ee63264b9c2600bf1a52006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/prefabs/TT_demo_male_A.prefab using Guid(6fb37f825ee63264b9c2600bf1a52006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4093dbc62b2d96dff588bf9d4037955') in 0.014060 seconds 
+  Import took 0.015740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.911400 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/TT_demo_female.FBX
+  artifactKey: Guid(3cefbbfe8c81fbb4283daa116169ef21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/TT_demo_female.FBX using Guid(3cefbbfe8c81fbb4283daa116169ef21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8e8fa8be6f1d22a7e39c60caf7590d') in 0.198901 seconds 
+  Import took 0.201028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/TT_demo_male_A.FBX
+  artifactKey: Guid(eb062aa776e44954d94c4c2f76ebc148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/TT_demo_male_A.FBX using Guid(eb062aa776e44954d94c4c2f76ebc148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2583328609c7dabf830310d8861620b7') in 0.035528 seconds 
+  Import took 0.037203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/TT_demo_zombie.FBX
+  artifactKey: Guid(f88c8301226fd194cbbc64e25b20d567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/TT_demo_zombie.FBX using Guid(f88c8301226fd194cbbc64e25b20d567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8967d98ebcd1c6b80c0188209c0e9aa') in 0.044672 seconds 
+  Import took 0.046509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/TT_demo_male_B.FBX
+  artifactKey: Guid(fbbb7e0ccd296444f8f4cb972237bf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/TT_demo_male_B.FBX using Guid(fbbb7e0ccd296444f8f4cb972237bf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9e9edca90b6b7a79537e91f5708344') in 0.044542 seconds 
+  Import took 0.046285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/TT_demo_police.FBX
+  artifactKey: Guid(fdfb5e1c4a1b339489c0eddebb1ab872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/TT_demo_police.FBX using Guid(fdfb5e1c4a1b339489c0eddebb1ab872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46339ada2eedcd971877cd4ff658097') in 0.045084 seconds 
+  Import took 0.047070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.988330 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/ToonyTiny_Citizens_Megapack.tga
+  artifactKey: Guid(44aec3aaa337c294c9265a35fa489440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/ToonyTiny_Citizens_Megapack.tga using Guid(44aec3aaa337c294c9265a35fa489440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac9814480b1e402c0cbf96e7f5ac9dd') in 0.016355 seconds 
+  Import took 0.018250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/ToonyTiny_City_Pack.tga
+  artifactKey: Guid(d8467266b321e0342acb2a5b24a06fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/ToonyTiny_City_Pack.tga using Guid(d8467266b321e0342acb2a5b24a06fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36aadb22839b49e3cb10fee3afbfe9e') in 0.008584 seconds 
+  Import took 0.010096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/ToonyTiny_Zombies_Pack.tga
+  artifactKey: Guid(a8ce17bada18e924aa21047ff4b1beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/ToonyTiny_Zombies_Pack.tga using Guid(a8ce17bada18e924aa21047ff4b1beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5cde699a308f457461cbfff07e4b17') in 0.009497 seconds 
+  Import took 0.011260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.624534 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/Materials/TT_demo.mat
+  artifactKey: Guid(8fd192304df88db499eedb3456dc6d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/Materials/TT_demo.mat using Guid(8fd192304df88db499eedb3456dc6d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a23935dd97609b55c4b10874347d7452') in 0.024858 seconds 
+  Import took 0.026973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/Materials/TT_demo_texture.tga
+  artifactKey: Guid(7a97bf571a8477f449be264c891871e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/Materials/TT_demo_texture.tga using Guid(7a97bf571a8477f449be264c891871e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50898c8e84709fc4873e48a21a57b3e9') in 0.006834 seconds 
+  Import took 0.008526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.507910 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/sample_scene/ground.mat
+  artifactKey: Guid(434413e1195066545a96066e385c44e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/sample_scene/ground.mat using Guid(434413e1195066545a96066e385c44e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c8b73331370bbf4b774172c6234d54') in 0.009980 seconds 
+  Import took 0.012147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/sample_scene/quad.tga
+  artifactKey: Guid(5781fa2bdcc6cfc4aa608dc751feff4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/sample_scene/quad.tga using Guid(5781fa2bdcc6cfc4aa608dc751feff4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8cfc3ca20624c9ea9ff12517ef758c4') in 0.007298 seconds 
+  Import took 0.008993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 318.759454 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/model
+  artifactKey: Guid(2171a67348f1d6146836237bca600d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/model using Guid(2171a67348f1d6146836237bca600d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9d4ca3b2b3a06b6cc19936f0a944e0') in 0.005653 seconds 
+  Import took 0.007662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.781679 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/animation
+  artifactKey: Guid(0ea352ffa70bbfb46993c5a4df00d6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/animation using Guid(0ea352ffa70bbfb46993c5a4df00d6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20ea2ef9734986dc52916d0e6e37be3') in 0.005504 seconds 
+  Import took 0.007548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.593609 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_idle_A.FBX
+  artifactKey: Guid(f76657dd6f742dd4087218090ad1148c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_idle_A.FBX using Guid(f76657dd6f742dd4087218090ad1148c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002584edd96b2dbfbaae6e5f967c43cd') in 0.009135 seconds 
+  Import took 0.011404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_run_rm.FBX
+  artifactKey: Guid(c0048537d6cf8f048b3f020cc6f2a35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_run_rm.FBX using Guid(c0048537d6cf8f048b3f020cc6f2a35c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f615b81e0e894d5560b1cbb6012dd795') in 0.006544 seconds 
+  Import took 0.008214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_idle_B.FBX
+  artifactKey: Guid(e3caf38ba16a77949bc98ff31b5bd67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_idle_B.FBX using Guid(e3caf38ba16a77949bc98ff31b5bd67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa8e091962e46cfce61330aecd7127d') in 0.007090 seconds 
+  Import took 0.008654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_shoot_burst.FBX
+  artifactKey: Guid(687cb842871188646890b29f6e3b80b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_shoot_burst.FBX using Guid(687cb842871188646890b29f6e3b80b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f90c3f2b1e50960ae0d89a8787dbd9') in 0.006561 seconds 
+  Import took 0.007981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_shoot.FBX
+  artifactKey: Guid(80ab5b1ef45fca4489c63ad4e31b41a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_shoot.FBX using Guid(80ab5b1ef45fca4489c63ad4e31b41a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edee804f30c214556afe222e81c7227') in 0.007239 seconds 
+  Import took 0.009200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_run.FBX
+  artifactKey: Guid(5af874656ec2e434b80f9647d65942a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/animation/m_weapon_run.FBX using Guid(5af874656ec2e434b80f9647d65942a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa3b3bb40578581e7d6cd5be75ab009') in 0.006906 seconds 
+  Import took 0.008329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.403475 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/model/materials/TTS_Demo_texture.tga
+  artifactKey: Guid(6ad795c0cb8b5bb40bd0d43fb13dc0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/model/materials/TTS_Demo_texture.tga using Guid(6ad795c0cb8b5bb40bd0d43fb13dc0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b19c8c52059462050d3d9d8595a769e') in 0.014470 seconds 
+  Import took 0.016411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.965644 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/prefab/TT_Soldiers_Demo.prefab
+  artifactKey: Guid(5bf81c1e7c3fa764c9ad1ad61f333094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/prefab/TT_Soldiers_Demo.prefab using Guid(5bf81c1e7c3fa764c9ad1ad61f333094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e36db9c7c33dba60065cea0436f68a') in 0.016549 seconds 
+  Import took 0.018785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001218 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/prefab/TT_Soldiers_Demo.prefab
+  artifactKey: Guid(5bf81c1e7c3fa764c9ad1ad61f333094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/prefab/TT_Soldiers_Demo.prefab using Guid(5bf81c1e7c3fa764c9ad1ad61f333094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e36db9c7c33dba60065cea0436f68a') in 0.011154 seconds 
+  Import took 0.013096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 569.736835 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/Demo_sample_scene/animation_samples/weapon_idle.controller
+  artifactKey: Guid(94d76f859419a5048a2d6cf80ef45f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/Demo_sample_scene/animation_samples/weapon_idle.controller using Guid(94d76f859419a5048a2d6cf80ef45f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4798514e5471694c218f6abb9f379fca') in 0.008513 seconds 
+  Import took 0.010795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000532 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/Demo_sample_scene/animation_samples/weapon_idle.controller
+  artifactKey: Guid(94d76f859419a5048a2d6cf80ef45f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/Demo_sample_scene/animation_samples/weapon_idle.controller using Guid(94d76f859419a5048a2d6cf80ef45f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4798514e5471694c218f6abb9f379fca') in 0.002281 seconds 
+  Import took 0.003937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.511578 seconds.
+  path: Assets/xbot@Gunplay.fbx
+  artifactKey: Guid(7d2899e89d0257049a4afd3cdfc98a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/xbot@Gunplay.fbx using Guid(7d2899e89d0257049a4afd3cdfc98a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f1d17a5b418d5ba3cbd9e5cc347aca') in 0.048508 seconds 
+  Import took 0.050675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.028226 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/model/TT_Soldiers_Demo.FBX
+  artifactKey: Guid(7b36a186c6950424394704a9292a7114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/model/TT_Soldiers_Demo.FBX using Guid(7b36a186c6950424394704a9292a7114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aefeb036c7fd9744795bac483505393') in 0.017004 seconds 
+  Import took 0.019171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.136461 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/model/materials
+  artifactKey: Guid(4918428999fa3b643b9cab147af5f4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/model/materials using Guid(4918428999fa3b643b9cab147af5f4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de206e25da5166d78eccf49553b2d81b') in 0.006125 seconds 
+  Import took 0.008082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.873485 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/model/TT_Soldiers_Demo.FBX
+  artifactKey: Guid(7b36a186c6950424394704a9292a7114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/model/TT_Soldiers_Demo.FBX using Guid(7b36a186c6950424394704a9292a7114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e04e272c590abe0a0c0204c01787d2') in 0.018279 seconds 
+  Import took 0.020567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.716106 seconds.
+  path: Assets/ToonyTinyPeople
+  artifactKey: Guid(3383c0a402d6fe64e87ece708a0bae56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople using Guid(3383c0a402d6fe64e87ece708a0bae56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47a4c9f5aa48061803bab620c016824') in 0.007425 seconds 
+  Import took 0.009457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.183837 seconds.
+  path: Assets/xbot@Gunplay.fbx
+  artifactKey: Guid(7d2899e89d0257049a4afd3cdfc98a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/xbot@Gunplay.fbx using Guid(7d2899e89d0257049a4afd3cdfc98a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd2b41bd43787270f95964326a97594') in 0.125859 seconds 
+  Import took 0.128111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.475474 seconds.
+  path: Assets/Gunplay.anim
+  artifactKey: Guid(a9448deab4909d2489527e449414279b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gunplay.anim using Guid(a9448deab4909d2489527e449414279b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7bc86bdaecc78c37adfbf31181a274b') in 0.012785 seconds 
+  Import took 0.015079 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002715 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.635 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1386 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.8 MB.
+System memory in use after: 84.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1872.
+Total: 2.108300 ms (FindLiveObjects: 0.099400 ms CreateObjectMapping: 0.031000 ms MarkObjects: 1.906800 ms  DeleteObjects: 0.070500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000398 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.510 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.4 MB.
+System memory in use after: 70.5 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1841.
+Total: 1.291100 ms (FindLiveObjects: 0.121000 ms CreateObjectMapping: 0.034700 ms MarkObjects: 1.045600 ms  DeleteObjects: 0.089000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
