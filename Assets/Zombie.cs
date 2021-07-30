@@ -10,7 +10,6 @@ public class Zombie : MonoBehaviour
     Animator animator;
 
 
-    // Start is called before the first frame update
     IEnumerator Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -29,8 +28,8 @@ public class Zombie : MonoBehaviour
     internal void TakeHit(int damage)
     {
         hp -= damage;
-        //animator.Play("TakeHit");
-        
+        animator.Play("TakeHit");
+
         if (hp <= 0)
         {
             GetComponent<Collider>().enabled = false;
