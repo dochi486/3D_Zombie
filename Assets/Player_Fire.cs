@@ -12,11 +12,10 @@ public partial class Player : MonoBehaviour
         {
             if (shootDelayEndTime < Time.time)
             {
-                StartCoroutine(FlashBulletCo());
                 animator.SetBool("Fire", true);
                 shootDelayEndTime = Time.time + shootDelay;
                 IncreaseRecoil();
-                Instantiate(bullet, bulletPosition.position, CalculateRecoil(transform.rotation));
+                StartCoroutine(FlashBulletCo());
             }
         }
         else
@@ -26,13 +25,16 @@ public partial class Player : MonoBehaviour
         }
     }
 
-    //GameObject bulletLight;
+    GameObject bulletLight;
     public float bulletFlashTime = 0.001f;
     private IEnumerator FlashBulletCo()
     {
-        //bulletLight.SetActive(true);
+        yield return null; //총 쏘는 애니메이션 시작 후에 총알이 나가도록 1프레임 쉰다. 
+        Instantiate(bullet, bulletPosition.position, CalculateRecoil(transform.rotation));
+
+        bulletLight.SetActive(true);
         yield return new WaitForSeconds(bulletFlashTime);
-        //bulletLight.SetActive(false);
+        bulletLight.SetActive(false);
     }
 
     float recoilValue = 0f;

@@ -6,14 +6,13 @@ public partial class Player : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
         animator = GetComponentInChildren<Animator>();
+        bulletLight = GetComponentInChildren<Light>(true).gameObject;
     }
     void Start()
     {
 
     }
-    public static Player instance;
     public float speed = 3f;
     public GameObject bullet;
     public Transform bulletPosition;
@@ -27,7 +26,7 @@ public partial class Player : MonoBehaviour
     Plane plane = new Plane(new Vector3(0, 1, 0), 0);
     void LookAtMouse()
     {
-       
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         if (plane.Raycast(ray, out float enter))
