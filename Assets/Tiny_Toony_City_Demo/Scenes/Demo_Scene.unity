@@ -4609,6 +4609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2779955070538671390, guid: 4591bde8b1e84c74d9017c180f8a3f80, type: 3}
+      propertyPath: shootDelay
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2779955070538671391, guid: 4591bde8b1e84c74d9017c180f8a3f80, type: 3}
       propertyPath: m_RootOrder
       value: 2
