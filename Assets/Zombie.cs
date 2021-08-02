@@ -28,7 +28,9 @@ public class Zombie : MonoBehaviour
     internal void TakeHit(int damage)
     {
         hp -= damage;
-        animator.Play("TakeHit");
+        animator.Play(Random.Range(0,2) == 0 ? "TakeHit1" : "TakeHit2", 0,0);
+        //0번 레이어의 0번 프레임부터 다시 시작한다는 의미.
+        //애니메이션이 플레이 중이더라도 처음으로 돌아가서 다시 시작하게 된다. 
 
         if (hp <= 0)
         {

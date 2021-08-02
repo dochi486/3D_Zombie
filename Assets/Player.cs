@@ -31,7 +31,7 @@ public partial class Player : MonoBehaviour
         if (plane.Raycast(ray, out float enter))
         {
             Vector3 hitPoint = ray.GetPoint(enter);
-            Vector3 dir = hitPoint = transform.position;
+            Vector3 dir = hitPoint - transform.position;
             dir.y = transform.position.y;
             dir.Normalize();
             transform.forward = dir;
