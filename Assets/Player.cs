@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Player : MonoBehaviour
+public partial class Player : MonoBehaviour
 {
     Animator animator;
 
@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     {
         instance = this;
         animator = GetComponentInChildren<Animator>();
-        //rigid = GetComponent<Rigidbody>();
     }
     void Start()
     {
@@ -18,8 +17,6 @@ public class Player : MonoBehaviour
     public float speed = 3f;
     public GameObject bullet;
     public Transform bulletPosition;
-    //public Rigidbody rigid;
-
 
     void Update()
     {
@@ -65,17 +62,17 @@ public class Player : MonoBehaviour
         animator.SetFloat("DirY", move.z);
         animator.SetFloat("Speed", move.sqrMagnitude);
     }
-    private void Fire()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            //animator.Play("Shoot");
-            animator.SetBool("Fire", true);
-            Instantiate(bullet, bulletPosition.position, bulletPosition.rotation);
-        }
-        else
-        {
-            animator.SetBool("Fire", false);
-        }
-    }
+    //private void Fire()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Mouse0))
+    //    {
+    //        //animator.Play("Shoot");
+    //        animator.SetBool("Fire", true);
+    //        Instantiate(bullet, bulletPosition.position, bulletPosition.rotation);
+    //    }
+    //    else
+    //    {
+    //        animator.SetBool("Fire", false);
+    //    }
+    //}
 }
