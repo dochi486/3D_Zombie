@@ -49,9 +49,11 @@ public class Zombie : MonoBehaviour
 
         //그리고 이동 스피드가 잠시동안 0이 된다.
         agent.speed = 0;
-        CancelInvoke(nameof(SetTakeHitSpeed));
-        Invoke(nameof(SetTakeHitSpeed), TakeHitStopSpeedTime);
+        CancelInvoke(nameof(SetTakeHitSpeed)); //이전에 실행하고 있던 invoke를 꺼줘서 좀비의 내비에이전트 속도가 잠시 0이 되도록한다. 
+        //이전에 실행한 SetTakeHitSpeed를 취소해줘야 스피드0으로 설정한 것이 제대로 적용된다?
 
+        Invoke(nameof(SetTakeHitSpeed), TakeHitStopSpeedTime);
+        //좀비 내비메쉬에이전트의 스피드를 원래 속도로 돌려준다. 
 
         if (hp <= 0)
         {
