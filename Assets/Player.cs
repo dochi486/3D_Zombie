@@ -51,6 +51,13 @@ public partial class Player : MonoBehaviour
             move.x += 1;
         if (move != Vector3.zero)
         {
+            //카메라 방향과 이동하는 방향 비슷하게 보이도록? 카메라를 기준으로 이동시킨다
+            Vector3 relativeMove; //상대적인 이동값
+            relativeMove = Camera.main.transform.forward * move.z; //앞뒤이동 상대값
+            relativeMove += Camera.main.transform.right * move.x; //좌우이동 상대값
+            relativeMove.y = 0;
+            move = relativeMove;
+
             move.Normalize();
             transform.Translate(speed * move * Time.deltaTime, Space.World);
             //transform.forward = move; //이동하는 방향 바라보게 한다.
