@@ -24,7 +24,7 @@ public class Bulltet : MonoBehaviour
         //GC발생하는 코드 CompareTag는 GC발생 안해서 CampareTag가 더 좋다
         {
             var zombie = other.GetComponent<Zombie>();
-            zombie.TakeHit(power);
+            zombie.TakeHit(power, transform.forward);
             Destroy(gameObject);
         }
     }
