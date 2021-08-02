@@ -8,16 +8,18 @@ public class Player : MonoBehaviour
     {
         instance = this;
         animator = GetComponentInChildren<Animator>();
+        //rigid = GetComponent<Rigidbody>();
     }
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
     public static Player instance;
     public float speed = 3f;
     public GameObject bullet;
     public Transform bulletPosition;
+    public Rigidbody rigid;
 
     // Update is called once per frame
     void Update()
