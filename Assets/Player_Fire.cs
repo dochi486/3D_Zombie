@@ -15,7 +15,7 @@ public partial class Player : MonoBehaviour
                 animator.SetBool("Fire", true);
                 shootDelayEndTime = Time.time + shootDelay;
                 IncreaseRecoil();
-                StartCoroutine(FlashBulletCo());
+                StartCoroutine(InstantiateBulletFlashBulletCo());
             }
         }
         else
@@ -27,7 +27,7 @@ public partial class Player : MonoBehaviour
 
     GameObject bulletLight;
     public float bulletFlashTime = 0.001f;
-    private IEnumerator FlashBulletCo()
+    private IEnumerator InstantiateBulletFlashBulletCo()
     {
         yield return null; //총 쏘는 애니메이션 시작 후에 총알이 나가도록 1프레임 쉰다. 
         Instantiate(bullet, bulletPosition.position, CalculateRecoil(transform.rotation));
