@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 5829981749097156323}
   - component: {fileID: 5829981749097156322}
   m_Layer: 0
-  m_Name: GroundBlood 1
+  m_Name: GroundBlood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
