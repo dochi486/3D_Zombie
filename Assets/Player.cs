@@ -23,20 +23,16 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Vector3 move = Vector3.zero;
-
+        LookAtMouse();
         Move();
         Fire();
-
-        animator.SetFloat("DirX", move.x);
-        animator.SetFloat("DirY", move.z);
-        animator.SetFloat("Speed", move.sqrMagnitude);
-        //애니메이터의 파라미터 Speed를 실제 이동하는 속도 move.sqrMagnitude로 설정한다.
     }
     Plane plane = new Plane(new Vector3(0, 1, 0), 0);
     void LookAtMouse()
     {
+       
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
         if (plane.Raycast(ray, out float enter))
         {
             Vector3 hitPoint = ray.GetPoint(enter);
@@ -46,7 +42,7 @@ public class Player : MonoBehaviour
             transform.forward = dir;
         }
     }
-    private Vector3 Move()
+    private void Move()
     {
         Vector3 move = Vector3.zero;
 
@@ -64,16 +60,22 @@ public class Player : MonoBehaviour
             transform.Translate(speed * move * Time.deltaTime, Space.World);
             //transform.forward = move; //이동하는 방향 바라보게 한다.
         }
-        return move;
+        //애니메이터의 파라미터 Speed를 실제 이동하는 속도 move.sqrMagnitude로 설정한다.
+        animator.SetFloat("DirX", move.x);
+        animator.SetFloat("DirY", move.z);
+        animator.SetFloat("Speed", move.sqrMagnitude);
     }
     private void Fire()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            animator.Play("Shoot");
+            //animator.Play("Shoot");
+            animator.SetBool("Fire", true);
             Instantiate(bullet, bulletPosition.position, bulletPosition.rotation);
+        }
+        else
+        {
+            animator.SetBool("Fire", false);
         }
     }
 }
