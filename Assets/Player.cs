@@ -10,18 +10,17 @@ public class Player : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         //rigid = GetComponent<Rigidbody>();
     }
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     public static Player instance;
     public float speed = 3f;
     public GameObject bullet;
     public Transform bulletPosition;
-    public Rigidbody rigid;
+    //public Rigidbody rigid;
 
-    // Update is called once per frame
+
     void Update()
     {
         Vector3 move = Vector3.zero;
@@ -41,13 +40,16 @@ public class Player : MonoBehaviour
             transform.forward = move; //이동하는 방향 바라보게 한다.
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             animator.Play("Shoot");
             Instantiate(bullet, bulletPosition.position, bulletPosition.rotation);
         }
-
+        animator.SetFloat("DirX", move.x);
+        animator.SetFloat("DirY", move.z);
+        animator.SetFloat("Speed", move.sqrMagnitude);
+        //애니메이터의 파라미터 Speed를 실제 이동하는 속도 move.sqrMagnitude로 설정한다.
     }
 }
