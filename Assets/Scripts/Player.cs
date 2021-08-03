@@ -2,10 +2,8 @@
 using System.Collections;
 using UnityEngine;
 
-public partial class Player : MonoBehaviour
+public partial class Player : Character
 {
-    Animator animator;
-
     public enum StateType
     {
         Idle,
@@ -159,8 +157,9 @@ public partial class Player : MonoBehaviour
         animator.SetFloat("Speed", move.sqrMagnitude);
     }
 
-    internal void TakeHit(int power)
+
+    internal void TakeHit(int damage)
     {
-        print(power);
+        hp -= damage;
     }
 }

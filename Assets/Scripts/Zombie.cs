@@ -3,12 +3,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
-public class Zombie : MonoBehaviour
+public class Zombie : Character
 {
     public Transform target;
     NavMeshAgent agent;
-    private int hp = 100;
-    Animator animator;
     float originalSpeed;
     public LayerMask enemyLayer;
     public int power = 20;
