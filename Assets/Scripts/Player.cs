@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public partial class Player : MonoBehaviour
@@ -156,5 +157,10 @@ public partial class Player : MonoBehaviour
         animator.SetFloat("DirX", move.x);
         animator.SetFloat("DirY", move.z);
         animator.SetFloat("Speed", move.sqrMagnitude);
+    }
+
+    internal void TakeHit(int power)
+    {
+        print(power);
     }
 }

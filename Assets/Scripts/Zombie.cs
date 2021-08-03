@@ -10,6 +10,8 @@ public class Zombie : MonoBehaviour
     private int hp = 100;
     Animator animator;
     float originalSpeed;
+    public LayerMask enemyLayer;
+    public int power = 20;
 
     public float bloodEffectYposition = 1.3f; //피 이펙트의 y포지션
     public GameObject bloodParticle;
@@ -25,7 +27,7 @@ public class Zombie : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         target = FindObjectOfType<Player>().transform;
         originalSpeed = agent.speed;
-
+        attackCollider = GetComponentInChildren<SphereCollider>();
 
 
         CurrentFsm = ChaseFSM;
@@ -155,23 +157,46 @@ public class Zombie : MonoBehaviour
         CurrentFsm = ChaseFSM;
     }
 
+    public float attackTime = 0.4f; //실제로 때리는 모션을 하기 전까지의 시간
+    public float attackAnimationTime = 0.8f; //공격 애니메이션 클립의 총 길이
+    public SphereCollider attackCollider;
+
     private IEnumerator AttackFSM()
     {
-        yield return null;
+        //타겟을 바라보게 해서 때리게 하면 헛방이 없을 것 -> 플레이어가 구르면 못때린다
+        var lookAtPos = target.position;
+        lookAtPos.y = transform.position.y;
+        transform.LookAt(lookAtPos);
 
         //공격 애니메이션 플레이
+        animator.SetTrigger("Attack");
 
         //공격 중에는 이동 스피드가 0으로 바뀌게 한다.
+        agent.speed = 0;
+
+        //공격 타이밍까지 대기(공격 애니메이션의 0.6프레임 부터 실제로 때리기 때문에)
+        yield return new WaitForSeconds(attackTime);
 
         //특정 시간 지나면 충돌메쉬 사용해서 충돌 감지? <- 왜 하는 건지 모르겠다
         //공격 범위(AttackDistance)와 콜라이더(AttackRange)를 모두 사용하는 이유?
         //범위 안에 있지만 공격 콜라이더에 닿고있지 않은 상황이면 헛방을 때리도록?
-        //타겟을 바라보게 해서 때리게 하면 헛방이 없을 것 -> 플레이어가 구르면 못때린다
+        Collider[] enemyColliders = Physics.OverlapSphere(attackCollider.transform.position, attackCollider.radius, enemyLayer);
+        foreach (var item in enemyColliders)
+        {
+            item.GetComponent<Player>().TakeHit(power);
+        }
+        //공격 애니메이션이 끝날 때까지 대기한다. 
+        yield return new WaitForSeconds(attackAnimationTime - attackTime);
+        //위에서 0.4초를 기다렸으므로 남은 기다릴 시간은 총 클립 길이에서 기다린 시간을 빼준다. 
 
         //이동 스피드 복구
+        SetOriginalSpeed();
 
         //FSM 지정
-
+        CurrentFsm = ChaseFSM;
+        //Chase에서는 target이 있으면 잠시 랜덤한 시간만큼 기다렸다가
+        //공격 범위 안에 타겟이 있으면 공격을 하든, 추격을 하든 판단하는 로직이 있기 때문에
+        //ChaseFSM으로 다음 로직 판단하게 할 수 있다. 
     }
 
     private bool TargetIsInAttackDistance()
