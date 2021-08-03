@@ -20,9 +20,13 @@ public partial class Player : MonoBehaviour
 
     void Update()
     {
-        LookAtMouse();
-        Move();
-        Fire();
+
+        if (stateType != StateType.Roll)
+        {
+            LookAtMouse();
+            Move();
+            Fire();
+        }
         Roll();
     }
 
@@ -35,7 +39,7 @@ public partial class Player : MonoBehaviour
     }
 
     public AnimationCurve rollingSpeedAC;
-    float rollingSpeedMultiply = 1;
+    
     public float rollingSpeedManualMultiply = 1; //인스펙터에서 수정하는 값
     public enum StateType
     {
@@ -50,6 +54,9 @@ public partial class Player : MonoBehaviour
     public StateType stateType = StateType.Idle;
     private IEnumerator RollCo()
     {
+        animator.SetBool("Fire", false); //Roll하는 동안에는 fire애니메이션 안되도록
+        DecreaseRecoil();
+
         stateType = StateType.Roll;
         //구르는 애니메이션 재생
         animator.SetTrigger("Roll");
@@ -60,10 +67,12 @@ public partial class Player : MonoBehaviour
         while (endTime > Time.time)
         {
             float time = Time.time - startTime;
-            rollingSpeedMultiply = rollingSpeedAC.Evaluate(time) * rollingSpeedManualMultiply;
+            float rollingSpeedMultiply = rollingSpeedAC.Evaluate(time) * rollingSpeedManualMultiply;
+
+            transform.Translate(speed * transform.forward * rollingSpeedMultiply * Time.deltaTime, Space.World);
+
             yield return null;
         }
-        rollingSpeedMultiply = 1;
         stateType = StateType.Idle;
 
         //구르는 방향은 처음 바라보고 있던 방향으로 고정한다.
@@ -76,9 +85,9 @@ public partial class Player : MonoBehaviour
     Plane plane = new Plane(new Vector3(0, 1, 0), 0);
     void LookAtMouse()
     {
-        //roll상태에선 forward를 바꾸지 않도록
-        if (stateType == StateType.Roll)
-            return;
+        ////roll상태에선 forward를 바꾸지 않도록
+        //if (stateType == StateType.Roll)
+        //    return;
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -93,6 +102,10 @@ public partial class Player : MonoBehaviour
     }
     private void Move()
     {
+        ////Roll중일 때는 move할 필요 없으니 나가도록
+        //if (stateType == StateType.Roll)
+        //    return;
+
         Vector3 move = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W))
@@ -120,7 +133,7 @@ public partial class Player : MonoBehaviour
             move = relativeMove;
 
             move.Normalize();
-            transform.Translate(speed * move * rollingSpeedMultiply * Time.deltaTime, Space.World);
+            transform.Translate(speed * move * Time.deltaTime, Space.World);
             //transform.forward = move; //이동하는 방향 바라보게 한다.
         }
         //애니메이터의 파라미터 Speed를 실제 이동하는 속도 move.sqrMagnitude로 설정한다.
