@@ -35,11 +35,23 @@ public partial class Player : MonoBehaviour
         }
     }
 
+    public AnimationCurve rollingSpeedAC;
+    float rollingSpeedMultiply = 1;
+    public float rollingSpeedManualMultiply = 1;
     private IEnumerator RollCo()
     {
         //구르는 애니메이션 재생
         animator.SetTrigger("Roll");
-        yield return null;
+
+        float startTime = Time.time;
+        float endTime = startTime + rollingSpeedAC[rollingSpeedAC.length - 1].time;
+        while (endTime > Time.time)
+        {
+            float time = Time.time - startTime;
+            float rollingSpeed = rollingSpeedAC.Evaluate(time) * rollingSpeedManualMultiply;
+            yield return null;
+        }
+        rollingSpeedMultiply = 1;
         //구르는 동안 플레이어의 스피드를 빠르게 바꾼다. 
 
         //구르는 방향은 처음 바라보고 있던 방향으로 고정한다.
@@ -92,7 +104,7 @@ public partial class Player : MonoBehaviour
             move = relativeMove;
 
             move.Normalize();
-            transform.Translate(speed * move * Time.deltaTime, Space.World);
+            transform.Translate(speed * move *rollingSpeedMultiply * Time.deltaTime, Space.World);
             //transform.forward = move; //이동하는 방향 바라보게 한다.
         }
         //애니메이터의 파라미터 Speed를 실제 이동하는 속도 move.sqrMagnitude로 설정한다.
