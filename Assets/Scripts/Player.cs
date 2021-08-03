@@ -26,8 +26,9 @@ public partial class Player : MonoBehaviour
             LookAtMouse();
             Move();
             Fire();
+            Roll(); //Roll상태가 아닐 때만 Roll할 수 있도록 
         }
-        Roll();
+
     }
 
     private void Roll()
