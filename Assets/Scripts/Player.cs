@@ -145,7 +145,11 @@ public partial class Player : MonoBehaviour
             move = relativeMove;
 
             move.Normalize();
-            transform.Translate(speed * move * Time.deltaTime, Space.World);
+
+
+            float _speed = isFiring ? speedWhileShooting : speed; //총을 쏘는 중이면 총 쏘는 중의 스피드가 적용되고, 아니면 일반 스피드 사용 되도록
+
+            transform.Translate(_speed * move * Time.deltaTime, Space.World);
             //transform.forward = move; //이동하는 방향 바라보게 한다.
         }
         //애니메이터의 파라미터 Speed를 실제 이동하는 속도 move.sqrMagnitude로 설정한다.
