@@ -37,7 +37,7 @@ public partial class Player : MonoBehaviour
 
     public AnimationCurve rollingSpeedAC;
     float rollingSpeedMultiply = 1;
-    public float rollingSpeedManualMultiply = 1;
+    public float rollingSpeedManualMultiply = 1; //인스펙터에서 수정하는 값
     private IEnumerator RollCo()
     {
         //구르는 애니메이션 재생
@@ -48,7 +48,7 @@ public partial class Player : MonoBehaviour
         while (endTime > Time.time)
         {
             float time = Time.time - startTime;
-            float rollingSpeed = rollingSpeedAC.Evaluate(time) * rollingSpeedManualMultiply;
+            rollingSpeedMultiply = rollingSpeedAC.Evaluate(time) * rollingSpeedManualMultiply;
             yield return null;
         }
         rollingSpeedMultiply = 1;
