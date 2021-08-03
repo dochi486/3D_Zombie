@@ -76,6 +76,10 @@ public partial class Player : MonoBehaviour
     Plane plane = new Plane(new Vector3(0, 1, 0), 0);
     void LookAtMouse()
     {
+        //roll상태에선 forward를 바꾸지 않도록
+        if (stateType == StateType.Roll)
+            return;
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         if (plane.Raycast(ray, out float enter))
