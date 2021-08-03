@@ -67,17 +67,4 @@ public partial class Player : MonoBehaviour
         animator.SetFloat("DirY", move.z);
         animator.SetFloat("Speed", move.sqrMagnitude);
     }
-    //private void Fire()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Mouse0))
-    //    {
-    //        //animator.Play("Shoot");
-    //        animator.SetBool("Fire", true);
-    //        Instantiate(bullet, bulletPosition.position, bulletPosition.rotation);
-    //    }
-    //    else
-    //    {
-    //        animator.SetBool("Fire", false);
-    //    }
-    //}
 }
