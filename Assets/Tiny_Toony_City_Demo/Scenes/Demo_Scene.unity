@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 647525568}
-  m_PathPosition: 4.0161095
+  m_PathPosition: 1.403053
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -1692,7 +1692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1004981795}
-  m_PathPosition: 2.3174763
+  m_PathPosition: -4.909134
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -2457,7 +2457,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982738316}
-  m_LocalRotation: {x: 0.17854209, y: 0.055705883, z: -0.010125038, w: 0.98230195}
+  m_LocalRotation: {x: 0.1785421, y: 0.055705898, z: -0.010125043, w: 0.98230195}
   m_LocalPosition: {x: -4.7155457, y: 0, z: 12.571373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3693,10 +3693,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2051080853}
-    - target: {fileID: 6355002735739292582, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
-      propertyPath: attackDistance
-      value: 1.14
-      objectReference: {fileID: 0}
     - target: {fileID: 6355002735739292583, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -5314,7 +5310,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068582514}
-  m_LocalRotation: {x: 0.15820727, y: 0.119540654, z: -0.01929909, w: 0.9799531}
+  m_LocalRotation: {x: 0.1582073, y: 0.11954062, z: -0.019299084, w: 0.9799531}
   m_LocalPosition: {x: 14.61475, y: 0, z: 10.406015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
