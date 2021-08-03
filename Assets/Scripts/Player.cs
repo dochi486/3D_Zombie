@@ -38,7 +38,8 @@ public partial class Player : MonoBehaviour
     private IEnumerator RollCo()
     {
         //구르는 애니메이션 재생
-
+        animator.SetTrigger("Roll");
+        yield return null;
         //구르는 동안 플레이어의 스피드를 빠르게 바꾼다. 
 
         //구르는 방향은 처음 바라보고 있던 방향으로 고정한다.
