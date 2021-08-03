@@ -112,7 +112,7 @@ public class Zombie : MonoBehaviour
     void Die()
     {
         animator.Play("Die");
-        Destroy(gameObject, 1); //1초 뒤에 게임오브젝트(자기자신)을 파괴)
+        Destroy(gameObject, 0.5f); //1초 뒤에 게임오브젝트(자기자신)을 파괴)
     }
 
 
