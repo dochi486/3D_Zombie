@@ -11,14 +11,6 @@ public class Zombie : Character
     public LayerMask enemyLayer;
     public int power = 20;
 
-    public float bloodEffectYposition = 1.3f; //피 이펙트의 y포지션
-    public GameObject bloodParticle;
-    private void CreateBloodEffect()
-    {
-        var pos = transform.position;
-        pos.y = bloodEffectYposition;
-        Instantiate(bloodParticle, pos, Quaternion.identity);
-    }
     IEnumerator Start()
     {
         agent = GetComponent<NavMeshAgent>();
