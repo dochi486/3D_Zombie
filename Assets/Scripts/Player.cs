@@ -53,8 +53,15 @@ public partial class Player : MonoBehaviour
         {
             //카메라 방향과 이동하는 방향 비슷하게 보이도록? 카메라를 기준으로 이동시킨다
             Vector3 relativeMove; //상대적인 이동값
-            relativeMove = Camera.main.transform.forward * move.z; //앞뒤이동 상대값
-            relativeMove += Camera.main.transform.right * move.x; //좌우이동 상대값
+            relativeMove = Camera.main.transform.forward * move.z; 
+            //카메라의 포워드 앞 방향은 (0,0,1) * move.z
+            //카메라가 회전하면 월드축과 상대적으로 카메라의 로컬좌표 기준으로 포워드, right등을 정한다.
+            //로컬좌표와 월드좌표 상대적으로..
+            //앞뒤이동 상대값
+
+            relativeMove += Camera.main.transform.right * move.x; 
+            //카메라의 right는 x축의 양수값 (1,0,0) 
+            //좌우이동 상대값
             relativeMove.y = 0;
             move = relativeMove;
 
