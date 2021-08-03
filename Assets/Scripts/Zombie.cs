@@ -1,7 +1,10 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using Random = UnityEngine.Random;
 public class Zombie : MonoBehaviour
 {
     public Transform target;
@@ -22,16 +25,34 @@ public class Zombie : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
+        target = FindObjectOfType<Player>().transform;
         originalSpeed = agent.speed;
 
-        target = FindObjectOfType<Player>().transform;
 
-        while (hp > 0)
+
+        CurrentFsm = ChaseFSM;
+
+        while (true) // 상태를 무한히 반복해서 실행하는 부분.
         {
-            if (target)
-                agent.destination = target.position;
-            yield return new WaitForSeconds(Random.Range(0.5f, 2f));
+            var previousFSM = CurrentFsm;
+
+            fsmHandle = StartCoroutine(CurrentFsm());
+
+            // FSM 안에서 에러 발생시 무한 루프 도는 것을 방지 하기 위해서 추가함.
+            if (fsmHandle == null && previousFSM == CurrentFsm)
+                yield return null;
+
+            while (fsmHandle != null)
+                yield return null;
         }
+
+
+        //while (hp > 0)
+        //{
+        //    if (target)
+        //        agent.destination = target.position;
+        //    yield return new WaitForSeconds(Random.Range(0.5f, 2f));
+        //}
     }
 
     internal void TakeHit(int damage, Vector3 toMoveDirection)
@@ -83,6 +104,31 @@ public class Zombie : MonoBehaviour
     {
         animator.Play("Die");
         Destroy(gameObject, 1); //1초 뒤에 게임오브젝트(자기자신)을 파괴)
+    }
+
+
+    // 추격 할대 플레이어한테 공격 가능한 거리면 공격.
+    // 공격후 추격
+    // 추격 공격
+
+    Coroutine fsmHandle;
+    protected Func<IEnumerator> CurrentFsm
+    {
+        get { return m_currentFsm; }
+        set
+        {
+            m_currentFsm = value;
+            fsmHandle = null;
+        }
+    }
+    Func<IEnumerator> m_currentFsm;
+
+    IEnumerator ChaseFSM()
+    {
+        if (target)
+            agent.destination = target.position;
+        yield return new WaitForSeconds(Random.Range(0.5f, 2f));
+        CurrentFsm = ChaseFSM;
     }
 
 }
