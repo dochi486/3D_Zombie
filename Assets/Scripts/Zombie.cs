@@ -129,7 +129,8 @@ public class Zombie : MonoBehaviour
         set
         {
             if (fsmHandle != null)
-                StopCoroutine(fsmHandle);
+                StopCoroutine(fsmHandle); //이전 코루틴이 있으면 항상 멈추도록 하는 부분
+
             m_currentFsm = value;
             fsmHandle = null;
         }
