@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 
 public partial class Player : MonoBehaviour
 {
@@ -22,7 +24,30 @@ public partial class Player : MonoBehaviour
         LookAtMouse();
         Move();
         Fire();
+        Roll();
     }
+
+    private void Roll()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(RollCo());
+        }
+    }
+
+    private IEnumerator RollCo()
+    {
+        //구르는 애니메이션 재생
+
+        //구르는 동안 플레이어의 스피드를 빠르게 바꾼다. 
+
+        //구르는 방향은 처음 바라보고 있던 방향으로 고정한다.
+
+        //구르는 동안은 총알 발사 안되도록, 다른 방향으로 이동도 불가, 마우스 포인터 방향으로 바라보지도 않게
+
+
+    }
+
     Plane plane = new Plane(new Vector3(0, 1, 0), 0);
     void LookAtMouse()
     {
