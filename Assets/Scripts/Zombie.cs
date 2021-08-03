@@ -87,7 +87,7 @@ public class Zombie : MonoBehaviour
         if (hp <= 0)
         {
             GetComponent<Collider>().enabled = false;
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.11f);
             Die();
             //Invoke(nameof("Die"),1);//nameof를 사용하면 함수 이름 바꾸는 리팩토링할 때 유용
             //원래 인보크를 사용할 때는 Invoke("함수이름",딜레이시간);으로 써야한다. 
