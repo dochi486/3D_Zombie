@@ -132,7 +132,7 @@ public class Zombie : MonoBehaviour
     }
     Func<IEnumerator> m_currentFsm;
 
-    public float attackDistance = 3;
+    public float attackDistance = 1.16f;
 
     void OnDrawGizmosSelection()
     {
@@ -158,6 +158,20 @@ public class Zombie : MonoBehaviour
     private IEnumerator AttackFSM()
     {
         yield return null;
+
+        //공격 애니메이션 플레이
+
+        //공격 중에는 이동 스피드가 0으로 바뀌게 한다.
+
+        //특정 시간 지나면 충돌메쉬 사용해서 충돌 감지? <- 왜 하는 건지 모르겠다
+        //공격 범위(AttackDistance)와 콜라이더(AttackRange)를 모두 사용하는 이유?
+        //범위 안에 있지만 공격 콜라이더에 닿고있지 않은 상황이면 헛방을 때리도록?
+        //타겟을 바라보게 해서 때리게 하면 헛방이 없을 것 -> 플레이어가 구르면 못때린다
+
+        //이동 스피드 복구
+
+        //FSM 지정
+
     }
 
     private bool TargetIsInAttackDistance()
