@@ -5,6 +5,18 @@ public partial class Player : MonoBehaviour
 {
     Animator animator;
 
+    public enum StateType
+    {
+        Idle,
+        Move,
+        //Attack, //이동하면서 attack이 되기 때문에 하나의 상태가 아니라서 사용 안 한다.
+        TakeHit,
+        Roll,
+        Die,
+    }
+
+    public bool isFiring = false; //총 쏘는 중인지 확인하는 변수
+
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
@@ -17,6 +29,7 @@ public partial class Player : MonoBehaviour
     public float speed = 3f;
     public GameObject bullet;
     public Transform bulletPosition;
+    public float speedWhileShooting = 3;
 
     void Update()
     {
@@ -42,21 +55,12 @@ public partial class Player : MonoBehaviour
     public AnimationCurve rollingSpeedAC;
     
     public float rollingSpeedManualMultiply = 1; //인스펙터에서 수정하는 값
-    public enum StateType
-    {
-        Idle,
-        Move,
-        Attack,
-        TakeHit,
-        Roll,
-        Die,
-    }
+
 
     public StateType stateType = StateType.Idle;
     private IEnumerator RollCo()
     {
-        animator.SetBool("Fire", false); //Roll하는 동안에는 fire애니메이션 안되도록
-        DecreaseRecoil();
+        EndFiring(); //총 쏘는 게 끝났을 때 실행되는 코드
 
         stateType = StateType.Roll;
         //구르는 애니메이션 재생
@@ -81,6 +85,13 @@ public partial class Player : MonoBehaviour
         //구르는 동안은 총알 발사 안되도록, 다른 방향으로 이동도 불가, 마우스 포인터 방향으로 바라보지도 않게
 
 
+    }
+
+    private void EndFiring()
+    {
+        animator.SetBool("Fire", false); //Roll하는 동안에는 fire애니메이션 안되도록
+        DecreaseRecoil();
+        isFiring = false;
     }
 
     Plane plane = new Plane(new Vector3(0, 1, 0), 0);
