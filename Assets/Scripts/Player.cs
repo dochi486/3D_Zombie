@@ -160,8 +160,8 @@ public partial class Player : Character
 
     internal void TakeHit(int damage)
     {
-        hp -= damage;
-
+        //hp -= damage;
+        print("피격");
         //피격 애니메이션 재상
 
         //피 이펙트 생성
