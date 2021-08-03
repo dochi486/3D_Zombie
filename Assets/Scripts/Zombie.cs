@@ -132,12 +132,37 @@ public class Zombie : MonoBehaviour
     }
     Func<IEnumerator> m_currentFsm;
 
+    public float attackDistance = 3;
+
+    void OnDrawGizmosSelection()
+    {
+        Gizmos.DrawWireSphere(transform.position, attackDistance);
+        //좀비가 공격하는 범위에 gizmo를 그린다. 
+    }
+
     IEnumerator ChaseFSM()
     {
         if (target)
             agent.destination = target.position;
         yield return new WaitForSeconds(Random.Range(0.5f, 2f));
+
+        //타겟이 공격 범위 안에 들어왔는지 판단
+        if (TargetIsInAttackDistance())
+            CurrentFsm = AttackFSM;
+        else
+            CurrentFsm = ChaseFSM;
+
         CurrentFsm = ChaseFSM;
     }
 
+    private IEnumerator AttackFSM()
+    {
+        yield return null;
+    }
+
+    private bool TargetIsInAttackDistance()
+    {
+        float distance = Vector3.Distance(transform.position, target.position);
+        return distance < attackDistance; //범위 안에 타겟이 있다는 의미
+    }
 }
