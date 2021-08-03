@@ -146,6 +146,7 @@ public class Zombie : MonoBehaviour
     {
         if (target)
             agent.destination = target.position;
+
         yield return new WaitForSeconds(Random.Range(0.5f, 2f));
 
         //타겟이 공격 범위 안에 들어왔는지 판단
@@ -153,8 +154,6 @@ public class Zombie : MonoBehaviour
             CurrentFsm = AttackFSM;
         else
             CurrentFsm = ChaseFSM;
-
-        CurrentFsm = ChaseFSM;
     }
 
     public float attackTime = 0.4f; //실제로 때리는 모션을 하기 전까지의 시간
