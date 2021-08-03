@@ -136,8 +136,9 @@ public class Zombie : MonoBehaviour
 
     public float attackDistance = 1.16f;
 
-    void OnDrawGizmosSelection()
+    void OnDrawGizmosSelected()
     {
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackDistance);
         //좀비가 공격하는 범위에 gizmo를 그린다. 
     }

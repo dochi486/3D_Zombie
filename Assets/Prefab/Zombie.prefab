@@ -153,7 +153,7 @@ MonoBehaviour:
   moveBackDistance: 0.1
   moveBackNoise: 0.1
   TakeHitStopSpeedTime: 0.1
-  attackDistance: 1.16
+  attackDistance: 1.6
   attackTime: 0.4
   attackAnimationTime: 0.8
   attackCollider: {fileID: 0}
