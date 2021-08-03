@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
     public float bloodEffectYposition = 1.3f; //피 이펙트의 y포지션
     public GameObject bloodParticle;
 
-    protected int hp = 100;
+    public int hp = 100;
     protected Animator animator;
 
     protected void CreateBloodEffect()

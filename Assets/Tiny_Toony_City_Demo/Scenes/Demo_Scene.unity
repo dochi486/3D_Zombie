@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 647525568}
-  m_PathPosition: 1.926153
+  m_PathPosition: 5.007015
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -1692,7 +1692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1004981795}
-  m_PathPosition: -1.901514
+  m_PathPosition: 1.389954
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -5318,7 +5318,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068582514}
-  m_LocalRotation: {x: 0.15820728, y: 0.11954062, z: -0.019299082, w: 0.9799531}
+  m_LocalRotation: {x: 0.15820727, y: 0.119540654, z: -0.01929909, w: 0.9799531}
   m_LocalPosition: {x: 14.61475, y: 0, z: 10.406015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5834,6 +5834,10 @@ PrefabInstance:
     - target: {fileID: 6355002735739292577, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355002735739292582, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
+      propertyPath: hp
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6355002735739292582, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: target
