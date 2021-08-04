@@ -11,6 +11,7 @@ public class StageManager : SingletonMonoBehavior<StageManager>
 
     new private void Awake()
     {
+        base.Awake();
         //highScore = new SaveInt(highScore.Value.ToNumber()); //이렇게 하면 다른 스크립트에서 오류가 생길 수 있기 때문에
         highScore = new SaveInt("highScore"); //이렇게 해주는 것이 좋다
         ScoreUI.Instance.ScoreUIRefresh(score, highScore.Value);
