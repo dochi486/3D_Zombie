@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 public class Zombie : Character
 {
@@ -13,6 +14,7 @@ public class Zombie : Character
 
     IEnumerator Start()
     {
+      
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
         target = FindObjectOfType<Player>().transform;
