@@ -11,6 +11,7 @@ public class StageManager : SingletonMonoBehavior<StageManager>
 
     new private void Awake()
     {
+        highScore = new SaveInt(highScore.Value.ToNumber());
         ScoreUI.Instance.ScoreUIRefresh(score, highScore.Value);
     }
     public void AddScore(int addScore)
