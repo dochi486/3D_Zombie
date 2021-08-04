@@ -162,10 +162,27 @@ public partial class Player : Character
     {
         hp -= damage;
         //print("피격");
-        //피격 애니메이션 재상
 
         //피 이펙트 생성
+        CreateBloodEffect();
 
+        //피격 애니메이션 재생
+        animator.SetTrigger("TakeHit");
 
+        if(hp <= 0)
+        {
+            StartCoroutine(DieCo());
+        }    
+
+    }
+
+    public float dieDelayTime = 0.3f;
+
+    private IEnumerator DieCo()
+    {
+        GetComponent<Collider>().enabled = false;
+        yield return new WaitForSeconds(dieDelayTime);
+
+        animator.SetTrigger("Die");
     }
 }
