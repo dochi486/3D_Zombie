@@ -22,7 +22,7 @@ public class ScoreUI : SingletonMonoBehavior<ScoreUI>
     public void ScoreUIRefresh(int score, int highScore)
     {
         scoreText.text = score.ToNumber();
-        highScoreText.text = highScore.ToNumber();
+        highScoreText.text = "High :" + highScore.ToNumber();
     }
 }
 
