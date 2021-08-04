@@ -13,7 +13,7 @@ public class BloodEffectBox : MonoBehaviour
         foreach (var item in collisionEvent)
         {
             //print(item.intersection);
-            Quaternion rotate = Quaternion.Euler(0, item.velocity.VectorToDegree(), 0);
+            Quaternion rotate = Quaternion.Euler(0, item.velocity.VectorToDegree() + Random.Range(-90,90), 0);
             Instantiate(groundBlood, item.intersection, rotate);
         }
     }
