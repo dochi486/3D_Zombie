@@ -53,7 +53,7 @@ public class Zombie : Character
         if (hp <= 0)
         {
             GetComponent<Collider>().enabled = false;
-
+            animator.SetBool("Die", true); //bool로 애니메이터 트리거 만들어줌
         }
         //총알을 맞았을 때 뒤로 밀려난다. 
         PushBackMove(toMoveDirection);
@@ -79,15 +79,19 @@ public class Zombie : Character
         //코루틴 안에 있는 인보크는 가독성만 낮아지므로 코루틴으로 바꿔주는 게 좋다. 
 
         yield return new WaitForSeconds(TakeHitStopSpeedTime); //인보크 대신에 쉬는 코드를 먼저 넣고
-        SetOriginalSpeed(); //에이전트의 속도를 원래 속도로 돌려주는 함수 실행.
+
 
         if (hp <= 0)
         {
-            GetComponent<Collider>().enabled = false;
-            yield return new WaitForSeconds(0.11f); //피격 모션 끝나는 걸 기다려준다.
+            //yield return new WaitForSeconds(0.11f); //피격 모션 끝나는 걸 기다려준다.
             Die();
+            yield break;
             //Invoke(nameof("Die"),1);//nameof를 사용하면 함수 이름 바꾸는 리팩토링할 때 유용
             //원래 인보크를 사용할 때는 Invoke("함수이름",딜레이시간);으로 써야한다. 
+        }
+        else
+        {
+            SetOriginalSpeed(); //에이전트의 속도를 원래 속도로 돌려주는 함수 실행.
         }
         CurrentFsm = ChaseFSM; //피격 당한 후에 바로 FSM으로 추격모드 설정
     }
@@ -108,11 +112,12 @@ public class Zombie : Character
         agent.speed = originalSpeed;
     }
 
+    public float destroyDelayTime = 2f;
     void Die()
     {
         StageManager.Instance.AddScore(rewardScore);
-        animator.Play("Die");
-        Destroy(gameObject, 0.5f); //1초 뒤에 게임오브젝트(자기자신)을 파괴)
+        //animator.Play("Die"); //bool로 조건 만들어줬으니까 주석 처리
+        Destroy(gameObject, destroyDelayTime); //1초 뒤에 게임오브젝트(자기자신)을 파괴)
     }
 
 
