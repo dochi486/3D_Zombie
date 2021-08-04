@@ -147,11 +147,31 @@ public class Zombie : Character
 
         yield return new WaitForSeconds(Random.Range(0.5f, 2f));
 
-        //타겟이 공격 범위 안에 들어왔는지 판단
-        if (TargetIsInAttackDistance())
-            CurrentFsm = AttackFSM;
+        if (IsTargetAttackable()) //타겟이 공격 가능한 상태인지 확인
+        {
+            //타겟이 공격 범위 안에 들어왔는지 판단
+            if (TargetIsInAttackDistance())
+                CurrentFsm = AttackFSM;
+            else
+                CurrentFsm = ChaseFSM;
+        }
         else
-            CurrentFsm = ChaseFSM;
+        {
+            //공격 가능한 타겟이 아니라면 타겟을 찾아야한다. 
+
+            //타겟이 그래도 없다면 배회하거나
+
+            //제자리에 서있는다.
+            print("배회하는 중");
+        }
+    }
+
+    private bool IsTargetAttackable()
+    {
+        if (target.GetComponent<Player>().stateType == Player.StateType.Die)
+            return false; //플레이어가 죽은 상태라면 공격 불가능한 상태
+
+        return true;
     }
 
     public float attackTime = 0.4f; //실제로 때리는 모션을 하기 전까지의 시간
