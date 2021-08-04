@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public partial class Player : Character
@@ -32,6 +31,11 @@ public partial class Player : Character
 
     void Update()
     {
+        if (Time.deltaTime == 0)
+            return; //왜 있는지 모르겠다
+
+        if (stateType == StateType.Die)
+            return;
 
         if (stateType != StateType.Roll)
         {
@@ -52,7 +56,7 @@ public partial class Player : Character
     }
 
     public AnimationCurve rollingSpeedAC;
-    
+
     public float rollingSpeedManualMultiply = 1; //인스펙터에서 수정하는 값
 
 
@@ -169,10 +173,10 @@ public partial class Player : Character
         //피격 애니메이션 재생
         animator.SetTrigger("TakeHit");
 
-        if(hp <= 0)
+        if (hp <= 0)
         {
             StartCoroutine(DieCo());
-        }    
+        }
 
     }
 
@@ -180,6 +184,7 @@ public partial class Player : Character
 
     private IEnumerator DieCo()
     {
+        stateType = StateType.Die;
         GetComponent<Collider>().enabled = false;
         yield return new WaitForSeconds(dieDelayTime);
 
