@@ -19,7 +19,7 @@ public class ScoreUI : SingletonMonoBehavior<ScoreUI>
         scoreText = transform.Find("ScoreText").GetComponent<TextMeshProUGUI>();
         highScoreText = transform.Find("HighScoreText").GetComponent<TextMeshProUGUI>();
     }
-    public void UIRefresh(int score, int highScore)
+    public void ScoreUIRefresh(int score, int highScore)
     {
         scoreText.text = score.ToNumber();
         highScoreText.text = highScore.ToNumber();

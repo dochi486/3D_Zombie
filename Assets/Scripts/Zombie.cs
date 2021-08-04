@@ -2,7 +2,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UI;
 using Random = UnityEngine.Random;
 public class Zombie : Character
 {
@@ -14,7 +13,7 @@ public class Zombie : Character
 
     IEnumerator Start()
     {
-      
+
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
         target = FindObjectOfType<Player>().transform;
@@ -51,7 +50,11 @@ public class Zombie : Character
     internal void TakeHit(int damage, Vector3 toMoveDirection)
     {
         hp -= damage;
+        if (hp <= 0)
+        {
+            GetComponent<Collider>().enabled = false;
 
+        }
         //총알을 맞았을 때 뒤로 밀려난다. 
         PushBackMove(toMoveDirection);
 
@@ -81,7 +84,7 @@ public class Zombie : Character
         if (hp <= 0)
         {
             GetComponent<Collider>().enabled = false;
-            yield return new WaitForSeconds(0.11f);
+            yield return new WaitForSeconds(0.11f); //피격 모션 끝나는 걸 기다려준다.
             Die();
             //Invoke(nameof("Die"),1);//nameof를 사용하면 함수 이름 바꾸는 리팩토링할 때 유용
             //원래 인보크를 사용할 때는 Invoke("함수이름",딜레이시간);으로 써야한다. 

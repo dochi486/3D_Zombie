@@ -6,16 +6,20 @@ using UnityEngine;
 
 public class StageManager : SingletonMonoBehavior<StageManager>
 {
-    public int highScore; //저장된 최고 점수 값
+    public SaveInt highScore; //저장된 최고 점수 값
     public int score; //현재 스테이지의 스코어
 
+    new private void Awake()
+    {
+        ScoreUI.Instance.ScoreUIRefresh(score, highScore.Value);
+    }
     public void AddScore(int addScore)
     {
         score += addScore;
-        if (highScore < score)
-            highScore = score;
+        if (highScore.Value < score)
+            highScore.Value = score;
 
-        ScoreUI.Instance.UIRefresh(score, highScore); //UI를 새로고침한다.
+        ScoreUI.Instance.ScoreUIRefresh(score, highScore.Value); //UI를 새로고침한다.
     }
 
 
