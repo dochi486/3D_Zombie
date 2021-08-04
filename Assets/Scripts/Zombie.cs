@@ -107,6 +107,7 @@ public class Zombie : Character
 
     void Die()
     {
+        StageManager.Instance.AddScore(rewardScore);
         animator.Play("Die");
         Destroy(gameObject, 0.5f); //1초 뒤에 게임오브젝트(자기자신)을 파괴)
     }
@@ -226,4 +227,7 @@ public class Zombie : Character
         float distance = Vector3.Distance(transform.position, target.position);
         return distance < attackDistance; //범위 안에 타겟이 있다는 의미
     }
+
+    public int rewardScore = 100;
+
 }

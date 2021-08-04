@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Text;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -59,7 +60,8 @@ public class EditorUtil
                 typeof(Button),
                 typeof(Toggle),
                 typeof(Dropdown),
-                typeof(Animator)
+                typeof(Animator),
+                typeof(TextMeshProUGUI)
             });
 
         List<Transform> selectItems = new List<Transform>();// ;
