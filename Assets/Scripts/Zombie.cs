@@ -147,10 +147,18 @@ public class Zombie : Character
 
         yield return new WaitForSeconds(Random.Range(0.5f, 2f));
 
+        SetFSM_SelectAttackTargetOrAttacOrChase();
+    }
+
+    private void SetFSM_SelectAttackTargetOrAttacOrChase()
+    {
         if (IsTargetAttackable()) //타겟이 공격 가능한 상태인지 확인
         {
             //타겟이 공격 범위 안에 들어왔는지 판단
-            SetFSMAttackOrChase();
+            if (TargetIsInAttackDistance())
+                CurrentFsm = AttackFSM;
+            else
+                CurrentFsm = ChaseFSM;
         }
         else
         {
@@ -161,14 +169,6 @@ public class Zombie : Character
             //제자리에 서있는다.
             print("배회하는 중");
         }
-    }
-
-    private void SetFSMAttackOrChase()
-    {
-        if (TargetIsInAttackDistance())
-            CurrentFsm = AttackFSM;
-        else
-            CurrentFsm = ChaseFSM;
     }
 
     private bool IsTargetAttackable()
@@ -215,7 +215,7 @@ public class Zombie : Character
         SetOriginalSpeed();
 
         //FSM 지정
-        SetFSMAttackOrChase();
+        SetFSM_SelectAttackTargetOrAttacOrChase();
         //Chase에서는 target이 있으면 잠시 랜덤한 시간만큼 기다렸다가
         //공격 범위 안에 타겟이 있으면 공격을 하든, 추격을 하든 판단하는 로직이 있기 때문에
         //ChaseFSM으로 다음 로직 판단하게 할 수 있다. 
