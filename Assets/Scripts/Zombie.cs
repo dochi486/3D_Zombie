@@ -19,7 +19,9 @@ public class Zombie : Character
         animator = GetComponentInChildren<Animator>();
         target = FindObjectOfType<Player>().transform;
         originalSpeed = agent.speed;
-        attackCollider = GetComponentInChildren<SphereCollider>();
+        attackCollider = transform.Find("AttackRange").GetComponent<SphereCollider>(); //이름으로 찾아서 올바른 콜라이더 어택레인지를 찾도록했다.
+        //attackCollider = GetComponentInChildren<SphereCollider>(); //부모 오브젝트에 있는 걸 먼저 찾아서
+        //자기 자신한테 붙어있는 걸 먼저 찾기 때문에 오류가 났떤 것
 
 
         CurrentFsm = ChaseFSM;

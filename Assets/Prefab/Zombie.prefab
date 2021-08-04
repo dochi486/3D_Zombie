@@ -157,7 +157,7 @@ MonoBehaviour:
   attackDistance: 1
   attackTime: 0.4
   attackAnimationTime: 0.8
-  attackCollider: {fileID: 0}
+  attackCollider: {fileID: 657808843}
 --- !u!195 &6355002735739292580
 NavMeshAgent:
   m_ObjectHideFlags: 0
