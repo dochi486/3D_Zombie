@@ -73,4 +73,9 @@ public class SaveInt
     {
         return Value.ToString();
     }
+
+    public static implicit operator int (SaveInt saveInt)
+    {
+        return saveInt.value; //암시적 형변환 하는 부분!
+    }
 }
