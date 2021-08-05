@@ -35,7 +35,7 @@ using UnityEngine;
 //#endif
 
 [Serializable]
-public class SaveInt 
+public class SaveInt
 {
     [SerializeField]
     string key;
@@ -62,11 +62,17 @@ public class SaveInt
         {
             if (this.value != value)
             {
-                PlayerPrefs.SetInt(key, value);
-                PlayerPrefs.Save();
+                SetValue(value);
             }
             this.value = value;
         }
+    }
+
+    private void SetValue(int value)
+    {
+        PlayerPrefs.SetInt(key, value);
+        PlayerPrefs.Save();
+        this.value = value;
     }
 
     public override string ToString()
@@ -74,8 +80,15 @@ public class SaveInt
         return Value.ToString();
     }
 
-    public static implicit operator int (SaveInt saveInt)
+    public static implicit operator int(SaveInt saveInt)
     {
         return saveInt.value; //암시적 형변환 하는 부분!
     }
+
+    public static SaveInt operator +(SaveInt a, int b)
+    {
+        a.SetValue(a.value + b);
+        return a;
+    }
+
 }
