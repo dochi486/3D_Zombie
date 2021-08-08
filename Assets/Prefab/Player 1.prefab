@@ -113,7 +113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2779955070538671391
 Transform:
   m_ObjectHideFlags: 0
@@ -142,7 +142,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodEffectYposition: 1.3
-  bloodParticle: {fileID: 0}
+  bloodParticle: {fileID: 6539129784262216143, guid: 325f8a58add0f7745b537cf41ed770f5, type: 3}
+  hp: 100
+  damageColor: {r: 0.9150943, g: 0.22877358, b: 0.22877358, a: 1}
   isFiring: 0
   speed: 3
   bullet: {fileID: 3884493685061431491, guid: 008efdb97e4a4f744bb51a0a07bb410c, type: 3}
@@ -210,6 +212,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   rollingSpeedManualMultiply: 1
   stateType: 0
+  dieDelayTime: 0.3
   bulletFlashTime: 0.001
   shootDelay: 0.05
 --- !u!195 &2779955070538671388
