@@ -47,7 +47,7 @@ public class Zombie : Character
         //}
     }
 
-    internal void TakeHit(int damage, Vector3 toMoveDirection)
+    internal void TakeHit(int damage, Vector3 toMoveDirection, float pushBackDistance = 0.1f)
     {
         base.TakeHit(damage);
         if (hp <= 0)
@@ -56,7 +56,7 @@ public class Zombie : Character
             animator.SetBool("Die", true); //bool로 애니메이터 트리거 만들어줌
         }
         //총알을 맞았을 때 뒤로 밀려난다. 
-        PushBackMove(toMoveDirection);
+        PushBackMove(toMoveDirection, pushBackDistance);
 
         CurrentFsm = TakeHitFSM;
     }
@@ -95,7 +95,7 @@ public class Zombie : Character
 
     public float moveBackDistance = 0.1f;
     public float moveBackNoise = 0.1f;
-    private void PushBackMove(Vector3 toMoveDirection)
+    private void PushBackMove(Vector3 toMoveDirection, float moveBackDistance)
     {
         toMoveDirection.x += Random.Range(-moveBackNoise, moveBackNoise);
         toMoveDirection.z += Random.Range(-moveBackNoise, moveBackNoise);
