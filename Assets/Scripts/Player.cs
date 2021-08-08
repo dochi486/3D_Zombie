@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cinemachine;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -25,6 +26,8 @@ public partial class Player : Character
         bulletLight = GetComponentInChildren<Light>(true).gameObject;
 
         ChangeWeapon(mainWeapon);
+
+        SetCinemachineCamera(); //모든 시네머신 버추얼 카메라에서 Player를 타겟으로 지정하게 Awake에서 실행
     }
     GameObject currentWeponGo;
     private void ChangeWeapon(WeaponInfo _weaponInfo)
@@ -51,6 +54,16 @@ public partial class Player : Character
         shootDelay = currentWeapon.delay;
     }
 
+    [ContextMenu("SetCinemachineCamera")]
+    private void SetCinemachineCamera()
+    {
+        var vcs = FindObjectsOfType<CinemachineVirtualCamera>();
+        foreach (var item in vcs)
+        {
+            item.Follow = transform;
+            item.LookAt = transform;
+        }
+    }
 
     void Start()
     {
