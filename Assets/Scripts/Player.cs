@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public partial class Player : Character
@@ -14,6 +15,9 @@ public partial class Player : Character
     }
 
     public bool isFiring = false; //총 쏘는 중인지 확인하는 변수
+    public WeaponInfo mainWeapon;
+    public WeaponInfo currentWeapon;
+    public Transform rightWeaponPosition; //무기의 부모 오브젝트(오른팔)
 
     private void Awake()
     {
@@ -22,8 +26,32 @@ public partial class Player : Character
 
         ChangeWeapon(mainWeapon);
     }
-
     GameObject currentWeponGo;
+    private void ChangeWeapon(WeaponInfo _weaponInfo)
+    {
+        Destroy(currentWeponGo);
+        currentWeapon = _weaponInfo;
+
+        animator.runtimeAnimatorController = currentWeapon.overrideAnimator;
+
+        var weaponInfo = Instantiate(currentWeapon, rightWeaponPosition);
+        currentWeponGo = weaponInfo.gameObject;
+        weaponInfo.transform.localScale = currentWeapon.gameObject.transform.localScale;
+        weaponInfo.transform.localPosition = currentWeapon.gameObject.transform.localPosition;
+        weaponInfo.transform.localRotation = currentWeapon.gameObject.transform.localRotation;
+        currentWeapon = weaponInfo;
+
+        if (currentWeapon.attackCollider)
+            currentWeapon.attackCollider.enabled = false;
+
+        bulletPosition = weaponInfo.bulletPosition;
+
+        if (weaponInfo.bulletLight != null)
+            bulletLight = weaponInfo.bulletLight.gameObject;
+        shootDelay = currentWeapon.delay;
+    }
+
+
     void Start()
     {
 
