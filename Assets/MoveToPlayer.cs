@@ -13,10 +13,10 @@ public class MoveToPlayer : MonoBehaviour
     TweenerCore<float, float, FloatOptions> tweenResult;
 
 
-    private IEnumerator OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (alreadyDone)
-            yield break; //코루틴 함수 안에서는 return으로 나가는 게 아니라 yield break로 나간다. 
+            return; //코루틴 함수 안에서는 return으로 나가는 게 아니라 yield break로 나간다. 
 
         if (other.CompareTag("Player"))
         {
@@ -38,7 +38,7 @@ public class MoveToPlayer : MonoBehaviour
 
     public void StopCoroutine()
     {
-        StopCoroutine(setDestinationCoHandle);
+        StopCoroutine(setDestinationCoHandle); //OnTriggerEnter가 코루틴이라 오류가 났던 것이라서 일반 메서드로 바꾸고 코루틴 멈추는 부분을 추가해서 보완
     }
 
     IEnumerator SetDestiantionCo(Transform tr)
