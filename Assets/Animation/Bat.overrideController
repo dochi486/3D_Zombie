@@ -8,4 +8,6 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Bat
   m_Controller: {fileID: 9100000, guid: 94d76f859419a5048a2d6cf80ef45f88, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 25682c94ee56c604bb50feda0d05ffdf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5beb6fa42173b3346911af16b235ffc7, type: 3}
