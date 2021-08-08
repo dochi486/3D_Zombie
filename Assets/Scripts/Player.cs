@@ -262,4 +262,10 @@ public partial class Player : Character
         yield return new WaitForSeconds(dieDelayTime);
         animator.SetTrigger("Die");
     }
+
+    public void OnZombieEnter(Collider other)
+    {
+        var zombie = other.GetComponent<Zombie>();
+        zombie.TakeHit(currentWeapon.damage, currentWeapon.gameObject.transform.forward, currentWeapon.pushBackDistance);
+    }
 }

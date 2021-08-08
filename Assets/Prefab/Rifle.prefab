@@ -24,8 +24,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4586955114195637578}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.32717, y: 8.145945, z: 3.0161257}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2690380397557112859}
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 8386105138581913474}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &3765943303280992828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,9 +51,9 @@ MonoBehaviour:
   overrideAnimator: {fileID: 22100000, guid: f9a6c4ddbbaf70140b12d9e261066d39, type: 2}
   delay: 0.2
   pushBackDistance: 0.1
-  bullet: {fileID: 0}
-  bulletPosition: {fileID: 0}
-  bulletLight: {fileID: 0}
+  bullet: {fileID: 3884493685061431491, guid: 008efdb97e4a4f744bb51a0a07bb410c, type: 3}
+  bulletPosition: {fileID: 8386105138581913474}
+  bulletLight: {fileID: 8383180647748721195}
   maxBulletCount: 6
   attackStartTime: 0.1
   attackTime: 0.4
@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: m_Range
       value: 2.06
       objectReference: {fileID: 0}
+    - target: {fileID: 7191878951880937491, guid: 84a2001d804845f47ab84ba6d0486a83, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7191878951880937493, guid: 84a2001d804845f47ab84ba6d0486a83, type: 3}
       propertyPath: m_Name
       value: BulletLight
@@ -152,6 +156,11 @@ PrefabInstance:
 --- !u!4 &8383180647748721194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7191878951880937490, guid: 84a2001d804845f47ab84ba6d0486a83, type: 3}
+  m_PrefabInstance: {fileID: 1700572507066927672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &8383180647748721195 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 7191878951880937491, guid: 84a2001d804845f47ab84ba6d0486a83, type: 3}
   m_PrefabInstance: {fileID: 1700572507066927672}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2512058385817241584
