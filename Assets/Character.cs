@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Character : MonoBehaviour
@@ -17,5 +18,15 @@ public class Character : MonoBehaviour
         pos.y = bloodEffectYposition;
         Instantiate(bloodParticle, pos, Quaternion.identity);
     }
+
+    public static void CreateTextEffect(int number, Vector3 position, Color color)
+    {
+        GameObject memoryGo = (GameObject)Resources.Load("TextEffect");
+        GameObject go = Instantiate(memoryGo, position, Camera.main.transform.rotation);
+        TextMeshPro textMeshPro = go.GetComponent<TextMeshPro>();
+        textMeshPro.text = number.ToNumber();
+        textMeshPro.color = color;
+    }
+    public Color damageColor = Color.white;
 
 }
