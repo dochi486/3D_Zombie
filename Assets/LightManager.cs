@@ -48,14 +48,15 @@ public class LightManager : MonoBehaviour
             ChangeNightLight();
     }
 
-    Dictionary<Light, float> allLight;
+    Dictionary<Light, float> allLight; //float으로 intensity값을 저장
+    //멤버변수 allLight
     public float changeDuration = 4;
     private void ChangeNightLight()
     {
-        if(allLight == null)
+        if(allLight == null) //null이면 딕셔너리 초기화
         {
             allLight = new Dictionary<Light, float>();
-            var _allLight = FindObjectsOfType<Light>();
+            var _allLight = FindObjectsOfType<Light>(); //지역변수 _allLight
             foreach (var item in _allLight)
             {
                 allLight[item] = item.intensity;
@@ -71,6 +72,7 @@ public class LightManager : MonoBehaviour
                 DOTween.To(() => item.Value, (x) => item.Key.intensity = x, 0, changeDuration);
         }
         DOTween.To(() => Camera.main.backgroundColor, (x) => Camera.main.backgroundColor = x, dayColor, changeDuration);
+        //카메라의 백그라운드 컬러를 dayColor와 맞춰서 배경 이질감 줄이기
     }
 
     private void ChangeDayLight()
