@@ -1395,12 +1395,11 @@ MonoBehaviour:
   hp: 100
   damageColor: {r: 0.9150943, g: 0.22877358, b: 0.22877358, a: 1}
   isFiring: 0
-  mainWeapon: {fileID: 0}
+  mainWeapon: {fileID: 4293665214679381770, guid: e479d6e3668ae1545841901fbac4c016, type: 3}
+  subWeapon: {fileID: 3765943303280992828, guid: e23d5567886266549956a0b16790ce92, type: 3}
   currentWeapon: {fileID: 0}
   rightWeaponPosition: {fileID: 928910912742667313}
   speed: 3
-  bullet: {fileID: 3884493685061431491, guid: 008efdb97e4a4f744bb51a0a07bb410c, type: 3}
-  bulletPosition: {fileID: 0}
   speedWhileShooting: 3
   rollingSpeedAC:
     serializedVersion: 2
@@ -1465,6 +1464,12 @@ MonoBehaviour:
   rollingSpeedManualMultiply: 1
   stateType: 0
   dieDelayTime: 0.3
+  bulletCountInClip: 2
+  maxBulletCountInClip: 6
+  allBulletCount: 500
+  reloadTime: 1
+  bullet: {fileID: 3884493685061431491, guid: 008efdb97e4a4f744bb51a0a07bb410c, type: 3}
+  bulletPosition: {fileID: 0}
   bulletFlashTime: 0.001
   shootDelay: 0.05
 --- !u!195 &3068626954011811648

@@ -1,9 +1,15 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public partial class Player : Character
 {
+    public int bulletCountInClip = 2; //탄창에 현재 있는 총알 수???
+    public int maxBulletCountInClip = 6;
+    public int allBulletCount = 500; //가지고 있는 총 총알 수
+    public float reloadTime = 1f;
+
+    public GameObject bullet;
+    public Transform bulletPosition;
 
     float shootDelayEndTime;
     void Fire()
@@ -11,18 +17,46 @@ public partial class Player : Character
         if (Input.GetMouseButton(0))
         {
             isFiring = true;
-            if (shootDelayEndTime < Time.time)
+            if (shootDelayEndTime < Time.time && bulletCountInClip > 0)
             {
-                animator.SetBool("Fire", true);
+                bulletCountInClip--;
+                animator.SetTrigger("StartFire");
+
+                //animator.SetBool("Fire", true);
                 shootDelayEndTime = Time.time + shootDelay;
-                IncreaseRecoil();
-                StartCoroutine(InstantiateBulletFlashBulletCo());
+
+                switch (currentWeapon.type)
+                {
+                    case WeaponInfo.WeaponType.Gun:
+                        IncreaseRecoil();
+                        currentWeapon.StartCoroutine(InstantiateBulletFlashBulletCo());
+                        break;
+                    case WeaponInfo.WeaponType.Melee:
+                        currentWeapon.StartCoroutine(MeleeAttackCo());
+                        break;
+                }
+
             }
         }
         else
         {
             EndFiring();
         }
+    }
+
+    IEnumerator MeleeAttackCo()
+    {
+        yield return new WaitForSeconds(currentWeapon.attackStartTime);
+        currentWeapon.attackCollider.enabled = true;
+        yield return new WaitForSeconds(currentWeapon.attackTime);
+        currentWeapon.attackCollider.enabled = false;
+    }
+
+    private void EndFiring()
+    {
+        animator.SetBool("Fire", false); //Roll하는 동안에는 fire애니메이션 안되도록
+        DecreaseRecoil();
+        isFiring = false;
     }
 
     GameObject bulletLight;

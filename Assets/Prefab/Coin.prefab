@@ -49,7 +49,7 @@ MonoBehaviour:
   itemID: 0
   getMethod: 1
   keyCode: 101
-  color: {r: 0.016251087, g: 0, b: 1, a: 1}
+  color: {r: 0.13756847, g: 1, b: 0, a: 1}
 --- !u!1 &193550742327843313
 GameObject:
   m_ObjectHideFlags: 0

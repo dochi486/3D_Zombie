@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,32 +13,34 @@ public partial class Player : Character
         TakeHit,
         Roll,
         Die,
+        Reload,
     }
 
     public bool isFiring = false; //총 쏘는 중인지 확인하는 변수
     public WeaponInfo mainWeapon;
+    public WeaponInfo subWeapon;
+
     public WeaponInfo currentWeapon;
     public Transform rightWeaponPosition; //무기의 부모 오브젝트(오른팔)
 
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-        bulletLight = GetComponentInChildren<Light>(true).gameObject;
 
         ChangeWeapon(mainWeapon);
 
         SetCinemachineCamera(); //모든 시네머신 버추얼 카메라에서 Player를 타겟으로 지정하게 Awake에서 실행
     }
-    GameObject currentWeponGo;
+    GameObject currentWeaponGo;
     private void ChangeWeapon(WeaponInfo _weaponInfo)
     {
-        Destroy(currentWeponGo);
+        Destroy(currentWeaponGo);
         currentWeapon = _weaponInfo;
 
         animator.runtimeAnimatorController = currentWeapon.overrideAnimator;
 
         var weaponInfo = Instantiate(currentWeapon, rightWeaponPosition);
-        currentWeponGo = weaponInfo.gameObject;
+        currentWeaponGo = weaponInfo.gameObject;
         weaponInfo.transform.localScale = currentWeapon.gameObject.transform.localScale;
         weaponInfo.transform.localPosition = currentWeapon.gameObject.transform.localPosition;
         weaponInfo.transform.localRotation = currentWeapon.gameObject.transform.localRotation;
@@ -69,8 +72,6 @@ public partial class Player : Character
 
     }
     public float speed = 3f;
-    public GameObject bullet;
-    public Transform bulletPosition;
     public float speedWhileShooting = 3;
 
     void Update()
@@ -87,8 +88,34 @@ public partial class Player : Character
             Move();
             Fire();
             Roll(); //Roll상태가 아닐 때만 Roll할 수 있도록 
+            ReloadBullet();
+            if (Input.GetKeyDown(KeyCode.Tab))
+                ToogleChangeWeapon();
         }
 
+    }
+    bool toggleWeapon = false;
+    private void ToogleChangeWeapon()
+    {
+        ChangeWeapon(toggleWeapon == true ? mainWeapon : subWeapon);
+        toggleWeapon = !toggleWeapon; //!붙이는 거 뭔지 
+    }
+
+    private void ReloadBullet()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+            StartCoroutine(ReloadCo());
+    }
+
+    private IEnumerator ReloadCo()
+    {
+        stateType = StateType.Reload;
+        animator.SetTrigger("Reload");
+        yield return new WaitForSeconds(reloadTime);
+        stateType = StateType.Idle;
+        int reloadCount = Math.Min(allBulletCount, maxBulletCountInClip);
+        bulletCountInClip = reloadCount;
+        allBulletCount -= reloadCount;
     }
 
     private void Roll()
@@ -132,13 +159,6 @@ public partial class Player : Character
         //구르는 동안은 총알 발사 안되도록, 다른 방향으로 이동도 불가, 마우스 포인터 방향으로 바라보지도 않게
 
 
-    }
-
-    private void EndFiring()
-    {
-        animator.SetBool("Fire", false); //Roll하는 동안에는 fire애니메이션 안되도록
-        DecreaseRecoil();
-        isFiring = false;
     }
 
     Plane plane = new Plane(new Vector3(0, 1, 0), 0);
@@ -240,7 +260,6 @@ public partial class Player : Character
         stateType = StateType.Die;
         GetComponent<Collider>().enabled = false;
         yield return new WaitForSeconds(dieDelayTime);
-
         animator.SetTrigger("Die");
     }
 }
