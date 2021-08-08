@@ -19,7 +19,11 @@ public partial class Player : Character
     {
         animator = GetComponentInChildren<Animator>();
         bulletLight = GetComponentInChildren<Light>(true).gameObject;
+
+        ChangeWeapon(mainWeapon);
     }
+
+    GameObject currentWeponGo;
     void Start()
     {
 
