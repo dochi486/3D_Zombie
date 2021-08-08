@@ -1,5 +1,4 @@
 ﻿using Cinemachine;
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -199,10 +198,22 @@ public partial class Player : Character
 
             transform.Translate(_speed * move * Time.deltaTime, Space.World);
             //transform.forward = move; //이동하는 방향 바라보게 한다.
+
+            if (Mathf.RoundToInt(transform.forward.x) == 1 || Mathf.RoundToInt(transform.forward.x) == -1)
+            {
+                animator.SetFloat("DirX", transform.forward.z * move.z);
+                animator.SetFloat("DirY", transform.forward.x * move.x);
+            }
+            else
+            {
+                animator.SetFloat("DirX", transform.forward.x * move.x);
+                animator.SetFloat("DirY", transform.forward.z * move.z);
+            }
+
         }
         //애니메이터의 파라미터 Speed를 실제 이동하는 속도 move.sqrMagnitude로 설정한다.
-        animator.SetFloat("DirX", transform.forward.x);
-        animator.SetFloat("DirY", transform.forward.z);
+        //animator.SetFloat("DirX", transform.forward.x);
+        //animator.SetFloat("DirY", transform.forward.z);
         animator.SetFloat("Speed", move.sqrMagnitude);
     }
 

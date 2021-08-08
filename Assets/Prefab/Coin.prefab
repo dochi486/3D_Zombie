@@ -13,23 +13,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.26
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &193550740723736963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192091427618578617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e493032ed44358346a29c0feee4fe84b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  amount: 100
-  itemID: 0
-  getMethod: 1
-  keyCode: 101
 --- !u!95 &853489453
 Animator:
   serializedVersion: 3
@@ -49,6 +32,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &193550740723736963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192091427618578617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e493032ed44358346a29c0feee4fe84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  amount: 100
+  itemID: 0
+  getMethod: 1
+  keyCode: 101
+  color: {r: 0.016251087, g: 0, b: 1, a: 1}
 --- !u!1 &193550742327843313
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +95,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.1
   m_Speed: 0
-  m_Acceleration: 8
+  m_Acceleration: 999
   avoidancePriority: 99
   m_AngularSpeed: 1e+12
   m_StoppingDistance: 0
