@@ -162,13 +162,10 @@ public partial class Player : Character
     }
 
 
-    internal void TakeHit(int damage)
+    new internal void TakeHit(int damage)
     {
         hp -= damage;
         //print("피격");
-
-        //피 이펙트 생성
-        CreateBloodEffect();
 
         //피격 애니메이션 재생
         animator.SetTrigger("TakeHit");

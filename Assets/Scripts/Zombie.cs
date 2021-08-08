@@ -49,7 +49,7 @@ public class Zombie : Character
 
     internal void TakeHit(int damage, Vector3 toMoveDirection)
     {
-        hp -= damage;
+
         if (hp <= 0)
         {
             GetComponent<Collider>().enabled = false;
@@ -66,9 +66,6 @@ public class Zombie : Character
         animator.Play(Random.Range(0, 2) == 0 ? "TakeHit1" : "TakeHit2", 0, 0);
         //0번 레이어의 0번 프레임부터 다시 시작한다는 의미.
         //애니메이션이 플레이 중이더라도 처음으로 돌아가서 다시 시작하게 된다. 
-
-        CreateBloodEffect(); //피격되면 피 이펙트 생성
-
 
         //그리고 이동 스피드가 잠시동안 0이 된다.
         agent.speed = 0;

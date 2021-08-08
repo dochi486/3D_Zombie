@@ -29,4 +29,11 @@ public class Character : MonoBehaviour
     }
     public Color damageColor = Color.white;
 
+    protected void TakeHit(int damage)
+    {
+        hp -= damage;
+        CreateBloodEffect(); //피격되면 피 이펙트 생성
+        CreateTextEffect(damage, transform.position, damageColor);
+    }
+
 }
