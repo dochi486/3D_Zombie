@@ -6702,7 +6702,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068582514}
-  m_LocalRotation: {x: 0.1661731, y: 0.06975217, z: -0.011784723, w: 0.9835559}
+  m_LocalRotation: {x: 0.16617312, y: 0.06975214, z: -0.01178472, w: 0.9835559}
   m_LocalPosition: {x: 14.622017, y: 0, z: 11.026911}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7281,14 +7281,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1192625989964997762, guid: 7e043465bb1e91a4cbc7ec476a65f302, type: 3}
-      propertyPath: bulletPosition
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1192625989964997762, guid: 7e043465bb1e91a4cbc7ec476a65f302, type: 3}
-      propertyPath: rightWeaponPosition
-      value: 
-      objectReference: {fileID: 7853060280359375287}
     - target: {fileID: 6769023856603648053, guid: 7e043465bb1e91a4cbc7ec476a65f302, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7339,11 +7331,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e043465bb1e91a4cbc7ec476a65f302, type: 3}
---- !u!4 &7853060280359375287 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 928910912742667313, guid: 7e043465bb1e91a4cbc7ec476a65f302, type: 3}
-  m_PrefabInstance: {fileID: 6926407833354134918}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8234232311393497291
 PrefabInstance:
   m_ObjectHideFlags: 0
