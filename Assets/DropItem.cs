@@ -41,8 +41,6 @@ public class DropItem : MonoBehaviour
                     enabled = true;
                     break;
             }
-
-            Destroy(transform.parent.gameObject);
         }
     }
 

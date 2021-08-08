@@ -771,7 +771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 647525568}
-  m_PathPosition: 4.991404
+  m_PathPosition: 6.95558
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -1976,7 +1976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1004981795}
-  m_PathPosition: 1.219056
+  m_PathPosition: 0.3047009
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -2467,30 +2467,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
---- !u!1 &853489448 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 192091427618578617, guid: 2a54f0212edd13846862cd05734fee79, type: 3}
-  m_PrefabInstance: {fileID: 193550741481526953}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &853489453
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853489448}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c2d89e1b41941c94d86f57ba18d4d66c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &863336515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,7 +2879,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982738316}
-  m_LocalRotation: {x: 0.17854209, y: 0.055705883, z: -0.010125038, w: 0.98230195}
+  m_LocalRotation: {x: 0.1785421, y: 0.055705898, z: -0.010125043, w: 0.98230195}
   m_LocalPosition: {x: -4.7155457, y: 0, z: 12.571373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6601,14 +6577,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 193550740723736963, guid: 2a54f0212edd13846862cd05734fee79, type: 3}
-      propertyPath: amount
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 193550742327843312, guid: 2a54f0212edd13846862cd05734fee79, type: 3}
-      propertyPath: m_Radius
-      value: 2.47
-      objectReference: {fileID: 0}
     - target: {fileID: 193550742327843313, guid: 2a54f0212edd13846862cd05734fee79, type: 3}
       propertyPath: m_Name
       value: Coin
