@@ -49,7 +49,7 @@ public class Zombie : Character
 
     internal void TakeHit(int damage, Vector3 toMoveDirection)
     {
-
+        base.TakeHit(damage);
         if (hp <= 0)
         {
             GetComponent<Collider>().enabled = false;

@@ -21,7 +21,7 @@ public class Character : MonoBehaviour
 
     public static void CreateTextEffect(int number, Vector3 position, Color color)
     {
-        GameObject memoryGo = (GameObject)Resources.Load("TextEffect");
+        GameObject memoryGo = (GameObject)Resources.Load("TextEffect"); //씬에 로드한 것이 아니라 메모리 상태로 리소스 폴더에서 로드한 게임오브젝트
         GameObject go = Instantiate(memoryGo, position, Camera.main.transform.rotation);
         TextMeshPro textMeshPro = go.GetComponent<TextMeshPro>();
         textMeshPro.text = number.ToNumber();

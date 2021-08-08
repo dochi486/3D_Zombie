@@ -164,7 +164,7 @@ public partial class Player : Character
 
     new internal void TakeHit(int damage)
     {
-        hp -= damage;
+        base.TakeHit(damage);
         //print("피격");
 
         //피격 애니메이션 재생

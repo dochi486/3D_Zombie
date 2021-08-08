@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8390407349144561927}
   - component: {fileID: 8390407349144561925}
   - component: {fileID: 8390407349144561924}
+  - component: {fileID: -3762070353843046753}
   m_Layer: 7
   m_Name: TextEffect
   m_TagString: Untagged
@@ -170,3 +171,22 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!95 &-3762070353843046753
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8390407349144561926}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78c5d625235930b4d80f6c9ef1bd0da9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
