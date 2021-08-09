@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TimeController : MonoBehaviour
 {
+    public static bool ApplicationQuit = false;
+    private void OnApplicationQuit() => ApplicationQuit = true;
+
     private void Update()
     {
         //Time.deltaTime 사양이 다른 컴퓨터에서도 동일한 결과를 만들기 위해서

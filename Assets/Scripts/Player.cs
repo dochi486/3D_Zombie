@@ -28,6 +28,8 @@ public partial class Player : Character
         base.Awake();
         animator = GetComponentInChildren<Animator>();
 
+        //mainWeapon = new WeaponInfo(); //플레이할 때마다 총알 갯수 변경되는 거 수정하기 위한 코드였지만 이건 정석이 아닌 것 같아서 일단 보류
+
         if (mainWeapon)
             mainWeapon.Init();
         if (subWeapon)
