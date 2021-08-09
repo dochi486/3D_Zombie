@@ -77,7 +77,8 @@ public partial class Player : Character
     private IEnumerator InstantiateBulletFlashBulletCo()
     {
         yield return null; //총 쏘는 애니메이션 시작 후에 총알이 나가도록 1프레임 쉰다. 
-        Instantiate(Bullet, BulletPosition.position, CalculateRecoil(transform.rotation));
+        GameObject bulletGo = Instantiate(Bullet, BulletPosition.position, CalculateRecoil(transform.rotation));
+        bulletGo.GetComponent<Bulltet>().pushBackDistance = currentWeapon.pushBackDistance;
 
         bulletLight.SetActive(true);
         yield return new WaitForSeconds(bulletFlashTime);

@@ -1335,7 +1335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 647525568}
-  m_PathPosition: 4.6366615
+  m_PathPosition: 4.548016
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -2894,7 +2894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1004981795}
-  m_PathPosition: 1.3953991
+  m_PathPosition: 1.314288
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -4156,7 +4156,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982738316}
-  m_LocalRotation: {x: 0.17270643, y: -0.0012591758, z: 0.00022078556, w: 0.98497254}
+  m_LocalRotation: {x: 0.17270643, y: -0.0012591927, z: 0.00022078851, w: 0.98497254}
   m_LocalPosition: {x: -4.7962933, y: 0, z: 11.65225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9444,26 +9444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
-    - target: {fileID: 6355002735739292577, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6355002735739292582, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 2051080853}
-    - target: {fileID: 6355002735739292582, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
-      propertyPath: damageColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6355002735739292582, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
-      propertyPath: damageColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6355002735739292582, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
-      propertyPath: damageColor.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6355002735739292583, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: m_RootOrder
       value: 5

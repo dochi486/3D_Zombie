@@ -8,6 +8,8 @@ public class Bulltet : MonoBehaviour
     public float destroyTime = 1f;
     public int power = 20;
     public int randomRange = 4;
+    internal float pushBackDistance;
+
     private void Start()
     {
         Destroy(gameObject, destroyTime);
@@ -26,7 +28,7 @@ public class Bulltet : MonoBehaviour
         //GC발생하는 코드 CompareTag는 GC발생 안해서 CampareTag가 더 좋다
         {
             var zombie = other.GetComponent<Zombie>();
-            zombie.TakeHit(power + Random.Range(-randomRange, randomRange), transform.forward);
+            zombie.TakeHit(power + Random.Range(-randomRange, randomRange), transform.forward, pushBackDistance);
             Destroy(gameObject);
         }
     }
