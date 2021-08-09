@@ -4156,7 +4156,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982738316}
-  m_LocalRotation: {x: 0.17270643, y: -0.0012591927, z: 0.00022078851, w: 0.98497254}
+  m_LocalRotation: {x: 0.17270643, y: -0.0012591758, z: 0.00022078556, w: 0.98497254}
   m_LocalPosition: {x: -4.7962933, y: 0, z: 11.65225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8625,13 +8625,6 @@ MonoBehaviour:
   rollingSpeedManualMultiply: 1
   stateType: 0
   dieDelayTime: 0.3
-  bulletCountInClip: 2
-  maxBulletCountInClip: 6
-  allBulletCount: 500
-  maxBulletCount: 500
-  reloadTime: 1
-  bullet: {fileID: 3884493685061431491, guid: 008efdb97e4a4f744bb51a0a07bb410c, type: 3}
-  bulletPosition: {fileID: 0}
   bulletLight: {fileID: 0}
   bulletFlashTime: 0.001
   shootDelay: 0.05

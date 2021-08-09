@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DG.Tweening;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -93,15 +94,22 @@ public class Zombie : Character
         CurrentFsm = ChaseFSM; //피격 당한 후에 바로 FSM으로 추격모드 설정
     }
 
-    public float moveBackDistance = 0.1f;
+    public float moveBackDistance = 1f;
     public float moveBackNoise = 0.1f;
+    public float moveBackDuration = 0.5f; //밀리는 시간!
+    public Ease moveBackEase = Ease.InQuart;
     private void PushBackMove(Vector3 toMoveDirection, float moveBackDistance)
     {
         toMoveDirection.x += Random.Range(-moveBackNoise, moveBackNoise);
         toMoveDirection.z += Random.Range(-moveBackNoise, moveBackNoise);
         toMoveDirection.y = 0;
         toMoveDirection.Normalize();
-        transform.Translate(toMoveDirection * moveBackDistance, Space.World);
+
+        //transform.Translate(toMoveDirection * moveBackDistance, Space.World);
+        //Tranlate하면 1프레임만에 바로 이동하기 때문에 제대로 밀리는 효과 주려면 다르게 해야한다. \
+
+
+
     }
     public float TakeHitStopSpeedTime = 0.1f;
     private void SetOriginalSpeed()

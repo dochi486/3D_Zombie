@@ -3,15 +3,24 @@ using UnityEngine;
 
 public partial class Player : Character
 {
-    public int bulletCountInClip = 2; //탄창에 현재 있는 총알 수???
-    public int maxBulletCountInClip = 6; //탄창에 들어가는 최대 총알 수
-    public int allBulletCount = 500; //가지고 있는 총 총알 수
-    public int maxBulletCount = 500; //최대로 가질 수 있는 총알 수
-    public float reloadTime = 1f;
+    public int BulletCountInClip
+    {
+        get => currentWeapon.bulletCountInClip;
+        set => currentWeapon.bulletCountInClip = value;
+    }//탄창에 현재 있는 총알 수???
+    public int MaxBulletCountInClip => currentWeapon.maxBulletCountInClip; //탄창에 들어가는 최대 총알 수
+    public int AllBulletCount
+    {
+        get => currentWeapon.allBulletCount;
+        set => currentWeapon.allBulletCount = value;
+    } //가지고 있는 총 총알 수
+    //속성을 이렇게도 사용 가능 (한 줄짜리 할 때 이렇게 많이 사용?)
+    public int MaxBulletCount => currentWeapon.maxBulletCount; //최대로 가질 수 있는 총알 수
+    public float ReloadTime => currentWeapon.reloadTime;
     //위의 변수들은 나중에 WeaponInfo로 옮길 것
 
-    public GameObject bullet;
-    public Transform bulletPosition;
+    public GameObject Bullet => currentWeapon.bullet;
+    public Transform BulletPosition => currentWeapon.bulletPosition;
 
     float shootDelayEndTime;
     void Fire()
@@ -19,12 +28,12 @@ public partial class Player : Character
         if (Input.GetMouseButton(0))
         {
             isFiring = true;
-            if (shootDelayEndTime < Time.time && bulletCountInClip > 0)
+            if (shootDelayEndTime < Time.time && BulletCountInClip > 0)
             {
-                bulletCountInClip--;
+                BulletCountInClip--;
                 animator.SetTrigger("StartFire");
 
-                AmmoUI.Instance.SetBulletCount(bulletCountInClip, maxBulletCountInClip, allBulletCount + bulletCountInClip, maxBulletCount);
+                AmmoUI.Instance.SetBulletCount(BulletCountInClip, MaxBulletCountInClip, AllBulletCount + BulletCountInClip, MaxBulletCount);
 
                 //animator.SetBool("Fire", true);
                 shootDelayEndTime = Time.time + shootDelay;
@@ -68,7 +77,7 @@ public partial class Player : Character
     private IEnumerator InstantiateBulletFlashBulletCo()
     {
         yield return null; //총 쏘는 애니메이션 시작 후에 총알이 나가도록 1프레임 쉰다. 
-        Instantiate(bullet, bulletPosition.position, CalculateRecoil(transform.rotation));
+        Instantiate(Bullet, BulletPosition.position, CalculateRecoil(transform.rotation));
 
         bulletLight.SetActive(true);
         yield return new WaitForSeconds(bulletFlashTime);
