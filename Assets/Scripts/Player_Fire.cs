@@ -33,7 +33,8 @@ public partial class Player : Character
                 BulletCountInClip--;
                 animator.SetTrigger("StartFire");
 
-                AmmoUI.Instance.SetBulletCount(BulletCountInClip, MaxBulletCountInClip, AllBulletCount + BulletCountInClip, MaxBulletCount);
+                AmmoUI.Instance.SetBulletCount(BulletCountInClip, MaxBulletCountInClip,
+                    AllBulletCount + BulletCountInClip, MaxBulletCount);
 
                 //animator.SetBool("Fire", true);
                 shootDelayEndTime = Time.time + shootDelay;
@@ -44,6 +45,7 @@ public partial class Player : Character
                         IncreaseRecoil();
                         currentWeapon.StartCoroutine(InstantiateBulletFlashBulletCo());
                         break;
+
                     case WeaponInfo.WeaponType.Melee:
                         currentWeapon.StartCoroutine(MeleeAttackCo());
                         break;
@@ -67,7 +69,7 @@ public partial class Player : Character
 
     private void EndFiring()
     {
-        animator.SetBool("Fire", false); //Roll하는 동안에는 fire애니메이션 안되도록
+        //animator.SetBool("Fire", false); //Roll하는 동안에는 fire애니메이션 안되도록
         DecreaseRecoil();
         isFiring = false;
     }
