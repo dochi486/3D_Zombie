@@ -117,10 +117,36 @@ public class Zombie : Character
         agent.speed = originalSpeed;
     }
 
-    public float destroyDelayTime = 2f;
+    public float destroyDelayTime = 2f; //2초동안 기다렸다가 파괴된다. 
+    public Material dieMaterial;
+    public float dieMaterialDuration = 2f; //2초동안 매테리얼 변경된다. 매테리얼이 변경되는 시간!\
+
+    [ContextMenu("DieTest")]
+    void TestFn()
+    {
+        var renderers = GetComponentsInChildren<Renderer>(true);
+        foreach (var item in renderers)
+        {
+            item.sharedMaterial = dieMaterial; //왜 sharedMaterial로 쓰지?
+        }
+        //dieMaterial.SetFloat("_Progress", 0.5f); //Dissolved Edge 애셋의 쉐이더 변수 중 Progress를 설정해주는 부분
+        DOTween.To(() => 1f, (x) => dieMaterial.SetFloat("_Progress", x), 0, dieMaterialDuration);
+    }
+
     void Die()
     {
         StageManager.Instance.AddScore(rewardScore);
+
+        var renderers = GetComponentsInChildren<Renderer>(true);
+        foreach (var item in renderers)
+        {
+            item.sharedMaterial = dieMaterial; //왜 sharedMaterial로 쓰지?
+        }
+
+        //Dissolved Edge 애셋의 쉐이더 변수 중 Progress를 설정해주는 부분
+        //매테리얼 교체되는 동안 기다렸다가 파괴
+        DOTween.To(() => 1f, (x) => dieMaterial.SetFloat("_Progress", x), 0, dieMaterialDuration);
+
         //animator.Play("Die"); //bool로 조건 만들어줬으니까 주석 처리
         Destroy(gameObject, destroyDelayTime); //1초 뒤에 게임오브젝트(자기자신)을 파괴)
     }
