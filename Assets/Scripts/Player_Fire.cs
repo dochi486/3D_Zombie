@@ -28,7 +28,7 @@ public partial class Player : Character
             isFiring = true;
             if (shootDelayEndTime < Time.time && BulletCountInClip > 0)
             {
-                BulletCountInClip--;
+                BulletCountInClip--; //감소시켜야하기 때문에(이름 정확히 모르겠다 후치 어쩌구 같은데) 읽기전용 속성 아닌 쓰기까지 가능한 속성으로 만들어줌
                 animator.SetTrigger("StartFire");
 
                 AmmoUI.Instance.SetBulletCount(BulletCountInClip, MaxBulletCountInClip,
