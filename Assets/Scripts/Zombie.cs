@@ -97,8 +97,8 @@ public class Zombie : Character
     public float moveBackDistance = 1f;
     public float moveBackNoise = 0.1f;
     public float moveBackDuration = 0.5f; //밀리는 시간!
-    public Ease moveBackEase = Ease.InQuart;
-    private void PushBackMove(Vector3 toMoveDirection, float moveBackDistance)
+    public Ease moveBackEase = Ease.OutQuart;
+    private void PushBackMove(Vector3 toMoveDirection, float _moveBackDistance)
     {
         toMoveDirection.x += Random.Range(-moveBackNoise, moveBackNoise);
         toMoveDirection.z += Random.Range(-moveBackNoise, moveBackNoise);
@@ -108,7 +108,7 @@ public class Zombie : Character
         //transform.Translate(toMoveDirection * moveBackDistance, Space.World);
         //Tranlate하면 1프레임만에 바로 이동하기 때문에 제대로 밀리는 효과 주려면 다르게 해야한다. \
 
-
+        transform.DOMove(transform.position + toMoveDirection * _moveBackDistance * moveBackDistance, moveBackDuration).SetEase(moveBackEase);
 
     }
     public float TakeHitStopSpeedTime = 0.1f;
