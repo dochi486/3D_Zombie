@@ -24,7 +24,7 @@ public partial class Player : Character
                 bulletCountInClip--;
                 animator.SetTrigger("StartFire");
 
-                AmmoUI.Instance.SetBulletCount(bulletCountInClip, maxBulletCountInClip, bulletCountInClip + maxBulletCountInClip, allBulletCount);
+                AmmoUI.Instance.SetBulletCount(bulletCountInClip, maxBulletCountInClip, allBulletCount + bulletCountInClip, maxBulletCount);
 
                 //animator.SetBool("Fire", true);
                 shootDelayEndTime = Time.time + shootDelay;
