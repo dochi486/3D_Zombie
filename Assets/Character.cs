@@ -10,7 +10,13 @@ public class Character : MonoBehaviour
     public GameObject bloodParticle;
 
     public int hp = 100;
+    [HideInInspector]public int maxHp; 
     protected Animator animator;
+
+    protected void Awake()
+    {
+        maxHp = hp; //최대 HP를 초기화해준다. 
+    }
 
     protected void CreateBloodEffect()
     {

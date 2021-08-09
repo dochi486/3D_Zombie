@@ -23,13 +23,15 @@ public partial class Player : Character
     public WeaponInfo currentWeapon;
     public Transform rightWeaponPosition; //무기의 부모 오브젝트(오른팔)
 
-    private void Awake()
+    new protected void Awake()
     {
+        base.Awake();
         animator = GetComponentInChildren<Animator>();
 
         ChangeWeapon(mainWeapon);
 
         SetCinemachineCamera(); //모든 시네머신 버추얼 카메라에서 Player를 타겟으로 지정하게 Awake에서 실행
+        HealthUI.Instance.SetGauge(hp, maxHp);
     }
     GameObject currentWeaponGo;
     private void ChangeWeapon(WeaponInfo _weaponInfo)
@@ -242,6 +244,8 @@ public partial class Player : Character
     {
         base.TakeHit(damage);
         //print("피격");
+
+        HealthUI.Instance.SetGauge(hp, maxHp);
 
         //피격 애니메이션 재생
         animator.SetTrigger("TakeHit");
