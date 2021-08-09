@@ -159,9 +159,9 @@ MonoBehaviour:
   moveBackDuration: 0.5
   moveBackEase: 11
   TakeHitStopSpeedTime: 0.1
-  destroyDelayTime: 2
+  destroyDelayTime: 1
   dieMaterial: {fileID: 2100000, guid: 5a0e9086bd6bbf245bd506367fc008db, type: 2}
-  dieMaterialDuration: 2
+  dieMaterialDuration: 3
   attackDistance: 1
   attackTime: 0.4
   attackAnimationTime: 0.8
