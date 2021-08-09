@@ -63,7 +63,7 @@ public partial class Player : Character
         isFiring = false;
     }
 
-    GameObject bulletLight;
+    public GameObject bulletLight;
     public float bulletFlashTime = 0.001f;
     private IEnumerator InstantiateBulletFlashBulletCo()
     {
