@@ -11,7 +11,7 @@ public class HealthUI : GaugeUI<HealthUI>
 }
 
 public class GaugeUI<T> : SingletonMonoBehavior<T>
-    where T: SingletonBase
+    where T: SingletonBase //Generic으로 GaugeUI 변환..? 
 {
     public List<Image> images = new List<Image>();
     public Sprite enable, current, disable;
