@@ -952,22 +952,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 209427535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e531b8ff2102cce478cff75944636b90, type: 3}
+  m_Script: {fileID: 11500000, guid: 59f46fe8d4cb6854cb3bde36f83438d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  completeUiInite: 0
-  images:
-  - {fileID: 1499332569}
-  - {fileID: 1458038792}
-  - {fileID: 2118996961}
-  - {fileID: 1724731373}
-  - {fileID: 692685373}
-  - {fileID: 201954440}
-  - {fileID: 651645298}
-  - {fileID: 508077099}
-  enable: {fileID: 21300000, guid: 9b8ca61c8aa31c340a62654b993e1749, type: 3}
-  current: {fileID: 21300000, guid: 1746e8c3d3d5fb44087551b4bd7aa9ed, type: 3}
-  disable: {fileID: 21300000, guid: 186ff24c8721bde449a5b7473ef87244, type: 3}
 --- !u!222 &209427538
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8765,7 +8752,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068582514}
-  m_LocalRotation: {x: 0.16617312, y: 0.06975214, z: -0.01178472, w: 0.9835559}
+  m_LocalRotation: {x: 0.1661731, y: 0.06975217, z: -0.011784723, w: 0.9835559}
   m_LocalPosition: {x: 14.622017, y: 0, z: 11.026911}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

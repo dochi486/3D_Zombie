@@ -5,20 +5,9 @@ using UnityEngine;
 
 public class AmmoUI : GaugeUI<AmmoUI>
 {
-    // Start is called before the first frame update
-    void Start()
+    internal void SetBulletCount(int bulletCountInClip, int maxBulletCountInClip, int allBulletCount, int maxBulletCount)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    internal void SetBulletCount(int v1, int v2, int v3)
-    {
-        SetGauge(v1, v2);
+        SetGauge(bulletCountInClip, maxBulletCountInClip);
+        valueText.text = $"{allBulletCount}/{maxBulletCount}";
     }
 }

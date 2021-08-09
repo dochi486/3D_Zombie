@@ -32,6 +32,7 @@ public partial class Player : Character
 
         SetCinemachineCamera(); //모든 시네머신 버추얼 카메라에서 Player를 타겟으로 지정하게 Awake에서 실행
         HealthUI.Instance.SetGauge(hp, maxHp);
+        AmmoUI.Instance.SetBulletCount(bulletCountInClip, maxBulletCountInClip, bulletCountInClip + maxBulletCountInClip, allBulletCount);
     }
     GameObject currentWeaponGo;
     private void ChangeWeapon(WeaponInfo _weaponInfo)

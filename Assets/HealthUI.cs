@@ -16,7 +16,7 @@ public class GaugeUI<T> : SingletonMonoBehavior<T>
     public List<Image> images = new List<Image>();
     public Sprite enable, current, disable;
 
-    TextMeshProUGUI valueText;
+    public TextMeshProUGUI valueText;
 
     protected override void OnInit()
     {
