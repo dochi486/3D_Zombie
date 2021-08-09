@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class TimeController : MonoBehaviour
 {
-    public static bool ApplicationQuit = false;
-    private void OnApplicationQuit() => ApplicationQuit = true;
 
     private void Update()
     {

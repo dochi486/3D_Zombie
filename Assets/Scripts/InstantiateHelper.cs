@@ -11,6 +11,9 @@ public class InstantiateInfo
 }
 public class InstantiateHelper : MonoBehaviour
 {
+    public static bool ApplicationQuit = false;
+    private void OnApplicationQuit() => ApplicationQuit = true;
+
     public List<InstantiateInfo> dropItems;
     public enum EventType
     {
@@ -25,7 +28,7 @@ public class InstantiateHelper : MonoBehaviour
         if (eventType != EventType.OnDestroy)
             return;
 
-        if (TimeController.ApplicationQuit)
+        if (ApplicationQuit)
             return;
 
         InstantiateObjects();
