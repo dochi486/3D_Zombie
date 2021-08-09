@@ -51,11 +51,11 @@ MonoBehaviour:
   overrideAnimator: {fileID: 22100000, guid: f9a6c4ddbbaf70140b12d9e261066d39, type: 2}
   bulletCountInClip: 60
   maxBulletCountInClip: 60
-  allBulletCount: 500
-  maxBulletCount: 500
+  allBulletCount: 2147483647
+  maxBulletCount: 2147483647
   reloadTime: 1
   delay: 0.2
-  pushBackDistance: 1
+  pushBackDistance: 0.1
   bullet: {fileID: 3884493685061431491, guid: 008efdb97e4a4f744bb51a0a07bb410c, type: 3}
   bulletPosition: {fileID: 8386105138581913474}
   bulletLight: {fileID: 8383180647748721195}

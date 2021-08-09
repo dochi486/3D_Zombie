@@ -128,7 +128,7 @@ public class Zombie : Character
         var renderers = GetComponentsInChildren<Renderer>(true);
         foreach (var item in renderers)
         {
-            item.sharedMaterial = dieMaterial; //왜 sharedMaterial로 쓰지?
+            item.sharedMaterial = dieMaterial;
         }
 
         dieMaterial.SetFloat("_Progress", 1);
