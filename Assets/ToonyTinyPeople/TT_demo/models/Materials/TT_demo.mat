@@ -72,8 +72,8 @@ Material:
     - _Edge: 0.093
     - _EdgeAround: 0.5
     - _EdgeAroundHDR: 1
-    - _EdgeAroundPower: 1
-    - _EdgeDistortion: 0
+    - _EdgeAroundPower: 2.36
+    - _EdgeDistortion: 0.2
     - _Glossiness: 0.5
     - _Metallic: 0
     - _Mode: 0
