@@ -14,11 +14,9 @@ public partial class Player : Character
         get => currentWeapon.allBulletCount;
         set => currentWeapon.allBulletCount = value;
     } //가지고 있는 총 총알 수
-    //속성을 이렇게도 사용 가능 (한 줄짜리 할 때 이렇게 많이 사용?)
+    //속성을 이렇게도 사용 가능 (한 줄짜리 속성을 사용 할 때 이렇게 많이 쓴다)
     public int MaxBulletCount => currentWeapon.maxBulletCount; //최대로 가질 수 있는 총알 수
     public float ReloadTime => currentWeapon.reloadTime;
-    //위의 변수들은 나중에 WeaponInfo로 옮길 것
-
     public GameObject Bullet => currentWeapon.bullet;
     public Transform BulletPosition => currentWeapon.bulletPosition;
 
@@ -50,7 +48,6 @@ public partial class Player : Character
                         currentWeapon.StartCoroutine(MeleeAttackCo());
                         break;
                 }
-
             }
         }
         else
