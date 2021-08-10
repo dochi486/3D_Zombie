@@ -1,10 +1,36 @@
 ﻿using Cinemachine;
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 
 public partial class Player : Character
 {
+
+    IEnumerator Start()
+    {
+        MultiAimConstraint multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
+        
+        while (stateType != StateType.Die)
+        {
+            List<Zombie> allZombies = new List<Zombie>(FindObjectsOfType<Zombie>());
+
+            if (allZombies.Count > 0)
+            {
+                var nearestZombie = allZombies.OrderBy(x => Vector3.Distance(x.transform.position, transform.position)).First();
+
+                var array = multiAimConstraint.data.sourceObjects;/*[0].transform = nearestZombie.transform;*/
+                array.Clear();
+                array.Add(new WeightedTransform(nearestZombie.transform, 1));
+                multiAimConstraint.data.sourceObjects = array;
+            }
+            yield return new WaitForSeconds(1);
+        }
+        //HeadRig가 주기적으로 실행되게 한다. 
+        //Awake는 오브젝트가 꺼져있을 때 실행이 안되므로(씬에 등장할 때 실행된다) Update 전에 무조건 실행되는 Start에서 실행
+    }
     public enum StateType
     {
         Idle,
@@ -43,18 +69,19 @@ public partial class Player : Character
 
 
         AmmoUI.Instance.SetBulletCount(BulletCountInClip, MaxBulletCountInClip, AllBulletCount + BulletCountInClip, MaxBulletCount); ;
+
     }
 
     private void InitWeapon(WeaponInfo weaponInfo)
     {
         if (weaponInfo)
         {
-            
+
             weaponInfo = Instantiate(mainWeapon, transform);
             //웨폰인포에 바로 접근해서 최대 총알 수가 플레이할 때마다 줄어들던 현상 수정하기 위해 추가한 부분
             weaponInfo.Init();
             weaponInfo.gameObject.SetActive(false);
-      
+
         }
     }
 
@@ -92,11 +119,6 @@ public partial class Player : Character
             item.Follow = transform;
             item.LookAt = transform;
         }
-    }
-
-    void Start()
-    {
-
     }
     public float speed = 3f;
     public float speedWhileShooting = 3;
