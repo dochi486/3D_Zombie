@@ -31,7 +31,13 @@ public partial class Player : Character
         //mainWeapon = new WeaponInfo(); //플레이할 때마다 총알 갯수 변경되는 거 수정하기 위한 코드였지만 이건 정석이 아닌 것 같아서 일단 보류
 
         if (mainWeapon)
+        {
+            var weaponInfo = Instantiate(mainWeapon, transform); 
+            //웨폰인포에 바로 접근해서 최대 총알 수가 플레이할 때마다 줄어들던 현상 수정하기 위해 추가한 부분
+            weaponInfo.Init();
+            weaponInfo.gameObject.SetActive(true);
             mainWeapon.Init();
+        }
         if (subWeapon)
             subWeapon.Init();
 
