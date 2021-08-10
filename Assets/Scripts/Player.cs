@@ -13,20 +13,25 @@ public partial class Player : Character
     {
         MultiAimConstraint multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
         RigBuilder rigBuilder = GetComponentInChildren<RigBuilder>();
-        
+
         while (stateType != StateType.Die)
         {
             List<Zombie> allZombies = new List<Zombie>(FindObjectsOfType<Zombie>());
+            //FindObjectsOfType은 안 쓰는 게 좋다. 나중에 바꿀 것
+            Transform lastTarget = null;
 
             if (allZombies.Count > 0)
             {
                 var nearestZombie = allZombies.OrderBy(x => Vector3.Distance(x.transform.position, transform.position)).First();
-
-                var array = multiAimConstraint.data.sourceObjects;/*[0].transform = nearestZombie.transform;*/
-                array.Clear();
-                array.Add(new WeightedTransform(nearestZombie.transform, 1));
-                multiAimConstraint.data.sourceObjects = array;
-                rigBuilder.Build();
+                if (lastTarget != nearestZombie.transform)
+                {
+                    lastTarget = nearestZombie.transform;
+                    var array = multiAimConstraint.data.sourceObjects;
+                    array.Clear();
+                    array.Add(new WeightedTransform(nearestZombie.transform, 1));
+                    multiAimConstraint.data.sourceObjects = array;
+                    rigBuilder.Build();
+                }
             }
             yield return new WaitForSeconds(1);
         }
