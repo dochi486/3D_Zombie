@@ -21,6 +21,7 @@ public partial class Player : Character
 
         while (stateType != StateType.Die)
         {
+            float yPosition = 0;
             List<Zombie> allZombies = Zombie.Zombies;
             //FindObjectsOfType은 안 쓰는 게 좋다. 나중에 바꿀 것
             Transform lastTarget = null;
@@ -28,8 +29,9 @@ public partial class Player : Character
             if (allZombies.Count > 0)
             {
                 var nearestZombie = allZombies.OrderBy(x => Vector3.Distance(x.transform.position, transform.position)).First();
-                if (lastTarget != nearestZombie.transform)
+                if (lastTarget != nearestZombie.transform) //타겟이 있을 떄 작동
                 {
+                    yPosition = 0.13f;
                     lastTarget = nearestZombie.transform;
                     var array = multiAimConstraint.data.sourceObjects;
                     array.Clear();
@@ -38,6 +40,9 @@ public partial class Player : Character
                     rigBuilder.Build();
                 }
             }
+            var pos = animator.transform.parent.position;
+            pos.y = yPosition;
+            animator.transform.parent.position = pos;
             yield return new WaitForSeconds(1);
         }
         //HeadRig가 주기적으로 실행되게 한다. 
@@ -249,7 +254,7 @@ public partial class Player : Character
         {
             Vector3 hitPoint = ray.GetPoint(enter);
             Vector3 dir = hitPoint - transform.position;
-            dir.y = transform.position.y;
+            dir.y = 0;
             dir.Normalize();
             transform.forward = dir;
         }
