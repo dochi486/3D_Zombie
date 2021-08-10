@@ -1,11 +1,14 @@
 ﻿using DG.Tweening;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 public class Zombie : Character
 {
+    public static List<Zombie> Zombies = new List<Zombie>();
+
     public Transform target;
     NavMeshAgent agent;
     float originalSpeed;
@@ -14,7 +17,7 @@ public class Zombie : Character
 
     IEnumerator Start()
     {
-
+        Zombies.Add(this);
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
         target = FindObjectOfType<Player>().transform;
@@ -53,6 +56,8 @@ public class Zombie : Character
         base.TakeHit(damage);
         if (hp <= 0)
         {
+            Zombies.Remove(this);
+            FindObjectOfType<Player>().RetargetLookAt();
             GetComponent<Collider>().enabled = false;
             animator.SetBool("Die", true); //bool로 애니메이터 트리거 만들어줌
         }

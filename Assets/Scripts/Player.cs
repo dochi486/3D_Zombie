@@ -8,15 +8,20 @@ using UnityEngine.Animations.Rigging;
 
 public partial class Player : Character
 {
+    Coroutine setLookAtTargetCoHandle;
+    private void Start()
+    {
+        setLookAtTargetCoHandle = StartCoroutine(SetLookAtTargetCo());
+    }
 
-    IEnumerator Start()
+    IEnumerator SetLookAtTargetCo()
     {
         MultiAimConstraint multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
         RigBuilder rigBuilder = GetComponentInChildren<RigBuilder>();
 
         while (stateType != StateType.Die)
         {
-            List<Zombie> allZombies = new List<Zombie>(FindObjectsOfType<Zombie>());
+            List<Zombie> allZombies = Zombie.Zombies;
             //FindObjectsOfType은 안 쓰는 게 좋다. 나중에 바꿀 것
             Transform lastTarget = null;
 
@@ -54,6 +59,17 @@ public partial class Player : Character
     public WeaponInfo subWeapon;
 
     public WeaponInfo currentWeapon;
+
+    internal void RetargetLookAt()
+    {
+        MultiAimConstraint multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
+        multiAimConstraint.data.sourceObjects = new WeightedTransformArray(); //왜 Clear해주면 안되고 이렇게 해야할까?
+        GetComponentInChildren<RigBuilder>().Build();
+
+        StopCoroutine(setLookAtTargetCoHandle);
+        setLookAtTargetCoHandle = StartCoroutine(SetLookAtTargetCo());
+    }
+
     public Transform rightWeaponPosition; //무기의 부모 오브젝트(오른팔)
 
     new protected void Awake()
