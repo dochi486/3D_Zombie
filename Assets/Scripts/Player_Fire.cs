@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public partial class Player : Character
@@ -25,35 +26,43 @@ public partial class Player : Character
     {
         if (Input.GetMouseButton(0))
         {
-            isFiring = true;
-            if (shootDelayEndTime < Time.time && BulletCountInClip > 0)
+            if (BulletCountInClip > 0)
             {
-                BulletCountInClip--; //감소시켜야하기 때문에(이름 정확히 모르겠다 후치 어쩌구 같은데) 읽기전용 속성 아닌 쓰기까지 가능한 속성으로 만들어줌
-                animator.SetTrigger("StartFire");
-
-                AmmoUI.Instance.SetBulletCount(BulletCountInClip, MaxBulletCountInClip,
-                    AllBulletCount + BulletCountInClip, MaxBulletCount);
-
-                //animator.SetBool("Fire", true);
-                shootDelayEndTime = Time.time + shootDelay;
-
-                switch (currentWeapon.type)
+                isFiring = true;
+                if (shootDelayEndTime < Time.time && BulletCountInClip > 0)
                 {
-                    case WeaponInfo.WeaponType.Gun:
-                        IncreaseRecoil();
-                        currentWeapon.StartCoroutine(InstantiateBulletFlashBulletCo());
-                        break;
+                    BulletCountInClip--; //감소시켜야하기 때문에(이름 정확히 모르겠다 후치 어쩌구 같은데) 읽기전용 속성 아닌 쓰기까지 가능한 속성으로 만들어줌
+                    animator.SetTrigger("StartFire");
 
-                    case WeaponInfo.WeaponType.Melee:
-                        currentWeapon.StartCoroutine(MeleeAttackCo());
-                        break;
+                    AmmoUI.Instance.SetBulletCount(BulletCountInClip, MaxBulletCountInClip,
+                        AllBulletCount + BulletCountInClip, MaxBulletCount);
+
+                    //animator.SetBool("Fire", true);
+                    shootDelayEndTime = Time.time + shootDelay;
+
+                    switch (currentWeapon.type)
+                    {
+                        case WeaponInfo.WeaponType.Gun:
+                            IncreaseRecoil();
+                            currentWeapon.StartCoroutine(InstantiateBulletFlashBulletCo());
+                            break;
+
+                        case WeaponInfo.WeaponType.Melee:
+                            currentWeapon.StartCoroutine(MeleeAttackCo());
+                            break;
+                    }
+                }
+                else
+                {
+                    CreateTextEffect("Reload!", "TextBubble", transform.position, Color.white);
                 }
             }
+            else
+            {
+                EndFiring();
+            }
         }
-        else
-        {
-            EndFiring();
-        }
+
     }
 
     IEnumerator MeleeAttackCo()
