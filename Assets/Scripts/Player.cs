@@ -12,6 +12,7 @@ public partial class Player : Character
     IEnumerator Start()
     {
         MultiAimConstraint multiAimConstraint = GetComponentInChildren<MultiAimConstraint>();
+        RigBuilder rigBuilder = GetComponentInChildren<RigBuilder>();
         
         while (stateType != StateType.Die)
         {
@@ -25,6 +26,7 @@ public partial class Player : Character
                 array.Clear();
                 array.Add(new WeightedTransform(nearestZombie.transform, 1));
                 multiAimConstraint.data.sourceObjects = array;
+                rigBuilder.Build();
             }
             yield return new WaitForSeconds(1);
         }
