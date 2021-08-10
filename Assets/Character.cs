@@ -30,11 +30,13 @@ public class Character : MonoBehaviour
         CreateTextEffect(number.ToNumber(), "TextEffect", position, color);
     }
 
-    public static void CreateTextEffect(string number, string prefabName, Vector3 position, Color color)
+    public static void CreateTextEffect(string number, string prefabName, Vector3 position, Color color, Transform parent = null)
     {
         GameObject memoryGo = (GameObject)Resources.Load(prefabName); //씬에 로드한 것이 아니라 메모리 상태로 리소스 폴더에서 로드한 게임오브젝트
         GameObject go = Instantiate(memoryGo, position, Camera.main.transform.rotation);
-        TextMeshPro textMeshPro = go.GetComponent<TextMeshPro>();
+        if (parent)
+            go.transform.parent = parent; //부모로 지정해서 플레이어를 따라다니도록 변경
+        TextMeshPro textMeshPro = go.GetComponentInChildren<TextMeshPro>();
         textMeshPro.text = number;
         textMeshPro.color = color;
     }

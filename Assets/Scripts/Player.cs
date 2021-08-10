@@ -53,7 +53,7 @@ public partial class Player : Character
             weaponInfo = Instantiate(mainWeapon, transform);
             //웨폰인포에 바로 접근해서 최대 총알 수가 플레이할 때마다 줄어들던 현상 수정하기 위해 추가한 부분
             weaponInfo.Init();
-            weaponInfo.gameObject.SetActive(true);
+            weaponInfo.gameObject.SetActive(false);
       
         }
     }

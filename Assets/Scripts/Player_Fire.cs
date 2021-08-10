@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using TMPro;
 using UnityEngine;
 
 public partial class Player : Character
@@ -29,7 +28,7 @@ public partial class Player : Character
             if (BulletCountInClip > 0)
             {
                 isFiring = true;
-                if (shootDelayEndTime < Time.time && BulletCountInClip > 0)
+                if (shootDelayEndTime < Time.time)
                 {
                     BulletCountInClip--; //감소시켜야하기 때문에(이름 정확히 모르겠다 후치 어쩌구 같은데) 읽기전용 속성 아닌 쓰기까지 가능한 속성으로 만들어줌
                     animator.SetTrigger("StartFire");
@@ -52,17 +51,23 @@ public partial class Player : Character
                             break;
                     }
                 }
-                else
-                {
-                    CreateTextEffect("Reload!", "TextBubble", transform.position, Color.white);
-                }
+
             }
             else
             {
-                EndFiring();
-            }
-        }
+                if (reloadAllertDelayEndTime < Time.time)
+                {
+                    reloadAllertDelayEndTime = Time.time + reloadAllertDelay;
 
+                    CreateTextEffect("Reload!", "TextBubble", transform.position, Color.white, transform);
+                }
+            }
+
+        }
+        else
+        {
+            EndFiring();
+        }
     }
 
     IEnumerator MeleeAttackCo()
@@ -114,4 +119,6 @@ public partial class Player : Character
     }
 
     [SerializeField] float shootDelay = 0.05f;
+    [SerializeField] float reloadAllertDelay = 0.05f;
+    float reloadAllertDelayEndTime;
 }
