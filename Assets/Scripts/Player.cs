@@ -42,7 +42,7 @@ public partial class Player : Character
             }
             var pos = animator.transform.parent.position;
             pos.y = yPosition;
-            animator.transform.parent.position = pos;
+            animator.transform.parent.localPosition = pos;
             yield return new WaitForSeconds(1);
         }
         //HeadRig가 주기적으로 실행되게 한다. 
@@ -297,18 +297,27 @@ public partial class Player : Character
             float _speed = isFiring ? speedWhileShooting : speed; //총을 쏘는 중이면 총 쏘는 중의 스피드가 적용되고, 아니면 일반 스피드 사용 되도록
 
             transform.Translate(_speed * move * Time.deltaTime, Space.World);
-            //transform.forward = move; //이동하는 방향 바라보게 한다.
+            ////transform.forward = move; //이동하는 방향 바라보게 한다.
+            ///
 
-            if (Mathf.RoundToInt(transform.forward.x) == 1 || Mathf.RoundToInt(transform.forward.x) == -1)
-            {
-                animator.SetFloat("DirX", transform.forward.z * move.z);
-                animator.SetFloat("DirY", transform.forward.x * move.x);
-            }
-            else
-            {
-                animator.SetFloat("DirX", transform.forward.x * move.x);
-                animator.SetFloat("DirY", transform.forward.z * move.z);
-            }
+            float forwardAngle = transform.forward.VectorToDegree();//앵글은 숫자이기 때문에 0~360에 해당하는 값이 들어간다. 
+            //트랜스폼.포워드는 방향이기 때문에 숫자가 아니다. 
+            float moveAngle = move.; //방향 -> 앵글
+            float dirAngle = moveAngle - forwardAngle; //방향 앵글, 애니메이터로 보내야할 각도
+            Vector3 dir = dirAngle;
+            animator.SetFloat("DirX", dir.x);
+            animator.SetFloat("DirY", dir.z);
+
+            //if (Mathf.RoundToInt(transform.forward.x) == 1 || Mathf.RoundToInt(transform.forward.x) == -1)
+            //{
+            //    animator.SetFloat("DirX", transform.forward.z * move.z);
+            //    animator.SetFloat("DirY", transform.forward.x * move.x);
+            //}
+            //else
+            //{
+            //    animator.SetFloat("DirX", transform.forward.x * move.x);
+            //    animator.SetFloat("DirY", transform.forward.z * move.z);
+            //}
 
         }
         //애니메이터의 파라미터 Speed를 실제 이동하는 속도 move.sqrMagnitude로 설정한다.
@@ -316,7 +325,6 @@ public partial class Player : Character
         //animator.SetFloat("DirY", transform.forward.z);
         animator.SetFloat("Speed", move.sqrMagnitude);
     }
-
 
     new internal void TakeHit(int damage)
     {

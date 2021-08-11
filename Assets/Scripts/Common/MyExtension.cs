@@ -10,7 +10,7 @@ static public class MyExtension
 {
     public static float VectorToDegree(this Vector3 v)
     {
-        float radian = Mathf.Atan2(v.z, v.x);
+        float radian = Mathf.Atan2(v.z, v.x); //ArcTangent2...
         return (radian * Mathf.Rad2Deg);
     }
 
