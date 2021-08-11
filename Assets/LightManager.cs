@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class LightManager : MonoBehaviour
+public class LightManager : SingletonMonoBehavior<LightManager>
 {
     //Ambient Color 환경광 영향을 받기 때문에 ~~ 
     public Color dayColor;
@@ -46,6 +46,20 @@ public class LightManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha6))
             ChangeNightLight();
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+            ToggleLight();
+    }
+    bool isDay = true;
+    public void ToggleLight()
+    {
+        if (isDay)
+        {
+            ChangeDayLight();
+        }
+        else
+            ChangeNightLight();
+
+        isDay = !isDay; //반대로 돌려주는 것
     }
 
     Dictionary<Light, float> allLight; //float으로 intensity값을 저장

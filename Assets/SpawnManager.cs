@@ -41,6 +41,8 @@ public class SpawnManager : MonoBehaviour
             float nextWaveStartTime = Time.time + item.time; //현재시간 + 웨이브의 시간
             while (Time.time < nextWaveStartTime)
                 yield return null;
+
+            LightManager.Instance.ToggleLight(); //웨이브가 끝나면 낮밤 변경되는 부분
         }
     }
 
