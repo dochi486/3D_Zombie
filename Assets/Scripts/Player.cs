@@ -21,7 +21,7 @@ public partial class Player : Character
 
         while (stateType != StateType.Die)
         {
-            float yPosition = 0;
+            //float yPosition = 0;
             List<Zombie> allZombies = Zombie.Zombies;
             //FindObjectsOfType은 안 쓰는 게 좋다. 나중에 바꿀 것
             Transform lastTarget = null;
@@ -31,7 +31,7 @@ public partial class Player : Character
                 var nearestZombie = allZombies.OrderBy(x => Vector3.Distance(x.transform.position, transform.position)).First();
                 if (lastTarget != nearestZombie.transform) //타겟이 있을 떄 작동
                 {
-                    yPosition = 0.13f;
+                    //yPosition = 0.13f;
                     lastTarget = nearestZombie.transform;
                     var array = multiAimConstraint.data.sourceObjects;
                     array.Clear();
@@ -40,9 +40,9 @@ public partial class Player : Character
                     rigBuilder.Build();
                 }
             }
-            var pos = animator.transform.parent.position;
-            pos.y = yPosition;
-            animator.transform.parent.localPosition = pos;
+            //var pos = animator.transform.parent.position;
+            //pos.y = yPosition;
+            //animator.transform.parent.localPosition = pos;
             yield return new WaitForSeconds(1);
         }
         //HeadRig가 주기적으로 실행되게 한다. 
@@ -300,13 +300,15 @@ public partial class Player : Character
             ////transform.forward = move; //이동하는 방향 바라보게 한다.
             ///
 
-            float forwardAngle = transform.forward.VectorToDegree();//앵글은 숫자이기 때문에 0~360에 해당하는 값이 들어간다. 
+            float forwardDegree = transform.forward.VectorToDegree();//앵글은 숫자이기 때문에 0~360에 해당하는 값이 들어간다. 
             //트랜스폼.포워드는 방향이기 때문에 숫자가 아니다. 
             float moveAngle = move.VectorToDegree(); //방향 -> 앵글
-            float dirRadian = (moveAngle - forwardAngle + 90) * Mathf.PI / 180; //방향 앵글, 애니메이터로 보내야할 각도
+            float dirRadian = (moveAngle - forwardDegree + 90) * Mathf.PI / 180; //방향 앵글, 애니메이터로 보내야할 각도
             Vector3 dir;
             dir.x = Mathf.Cos(dirRadian);
             dir.z = Mathf.Sin(dirRadian);
+            //Radian은 호와 반지름의 비율이다???
+
 
             animator.SetFloat("DirX", dir.x);
             animator.SetFloat("DirY", dir.z);
