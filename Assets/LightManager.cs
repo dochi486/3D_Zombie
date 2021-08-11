@@ -49,7 +49,7 @@ public class LightManager : SingletonMonoBehavior<LightManager>
         if (Input.GetKeyDown(KeyCode.Alpha7))
             ToggleLight();
     }
-    bool isDay = true;
+    bool isDay = false;
     public void ToggleLight()
     {
         if (isDay)

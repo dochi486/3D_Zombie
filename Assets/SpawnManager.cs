@@ -31,6 +31,7 @@ public class SpawnManager : SingletonMonoBehavior<SpawnManager>
     IEnumerator Start()
     {
         
+
         var spawnPoints = GetComponentsInChildren<SpawnPoint>(true);
         foreach (var item in waves)
         {
