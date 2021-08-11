@@ -302,9 +302,12 @@ public partial class Player : Character
 
             float forwardAngle = transform.forward.VectorToDegree();//앵글은 숫자이기 때문에 0~360에 해당하는 값이 들어간다. 
             //트랜스폼.포워드는 방향이기 때문에 숫자가 아니다. 
-            float moveAngle = move.; //방향 -> 앵글
-            float dirAngle = moveAngle - forwardAngle; //방향 앵글, 애니메이터로 보내야할 각도
-            Vector3 dir = dirAngle;
+            float moveAngle = move.VectorToDegree(); //방향 -> 앵글
+            float dirRadian = (moveAngle - forwardAngle + 90) * Mathf.PI / 180; //방향 앵글, 애니메이터로 보내야할 각도
+            Vector3 dir;
+            dir.x = Mathf.Cos(dirRadian);
+            dir.z = Mathf.Sin(dirRadian);
+
             animator.SetFloat("DirX", dir.x);
             animator.SetFloat("DirY", dir.z);
 
