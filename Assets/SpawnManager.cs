@@ -29,7 +29,7 @@ public class SpawnManager : MonoBehaviour
         var spawnPoints = GetComponentsInChildren<SpawnPoint>(true);
         foreach (var item in waves)
         {
-            Debug.LogWarning($"{++currentWaveIndex} 시작");
+            Debug.LogWarning($"{++currentWaveIndex}번째 웨이브 시작");
             int spawnCount = item.spawnCount;
 
             for (int i = 0; i < spawnCount; i++)
