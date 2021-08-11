@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnManager : MonoBehaviour
+public class SpawnManager : SingletonMonoBehavior<SpawnManager>
 {
     public int currentWaveIndex;
 
@@ -23,6 +23,11 @@ public class SpawnManager : MonoBehaviour
     }
     public List<WaveInfo> waves;
 
+    public void OnClearAllMonster()
+    {
+        nextWaveStartTime = 0;
+    }
+    float nextWaveStartTime;
     IEnumerator Start()
     {
         
@@ -38,7 +43,7 @@ public class SpawnManager : MonoBehaviour
                 Instantiate(item.monster, spawnPoint, Quaternion.identity);
             }
 
-            float nextWaveStartTime = Time.time + item.time; //현재시간 + 웨이브의 시간
+            nextWaveStartTime = Time.time + item.time; //현재시간 + 웨이브의 시간
             while (Time.time < nextWaveStartTime)
                 yield return null;
 

@@ -57,6 +57,10 @@ public class Zombie : Character
         if (hp <= 0)
         {
             Zombies.Remove(this);
+
+            if (Zombies.Count == 0)
+                SpawnManager.Instance.OnClearAllMonster();
+
             FindObjectOfType<Player>().RetargetLookAt();
             GetComponent<Collider>().enabled = false;
             animator.SetBool("Die", true); //bool로 애니메이터 트리거 만들어줌
