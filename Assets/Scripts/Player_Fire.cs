@@ -49,6 +49,9 @@ public partial class Player : Character
                         case WeaponInfo.WeaponType.Melee:
                             currentWeapon.StartCoroutine(MeleeAttackCo());
                             break;
+                        case WeaponInfo.WeaponType.Throw:
+                            currentWeapon.StartCoroutine(ThrowAttackCo());
+                            break;
                     }
                 }
 
@@ -68,6 +71,11 @@ public partial class Player : Character
         {
             EndFiring();
         }
+    }
+
+    private string ThrowAttackCo()
+    {
+        throw new System.NotImplementedException(); //수류탄 작업 안해서 함수 작성을 못해~
     }
 
     IEnumerator MeleeAttackCo()
