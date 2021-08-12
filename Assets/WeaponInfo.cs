@@ -7,6 +7,7 @@ public class WeaponInfo : MonoBehaviour
     {
         Gun,
         Melee, //근접공격
+        Throw, //수류탄 같은 투척 무기!
     }
     public WeaponType type;
     public int damage = 20;
@@ -42,5 +43,9 @@ public class WeaponInfo : MonoBehaviour
 
     public float attackTime = 0.4f;
     public Collider attackCollider;
+
+    [Header("투척무기")]
+    public GameObject throwGo;
+
 
 }
