@@ -15,7 +15,7 @@ C:/Users/topms/Documents/GitHub/3D_Zombie
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-3553
+13718
 Successfully changed project path to: C:/Users/topms/Documents/GitHub/3D_Zombie
 C:/Users/topms/Documents/GitHub/3D_Zombie
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/topms/Documents/GitHub/3D_Zombie
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 41.73 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 30.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.0b6 (2055a14f48ed)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.0b6/Editor/Data/Resources/UnitySubsystems
@@ -63,54 +63,54 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b6/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b6/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b6/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b6/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b6/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b6/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009648 seconds.
+Registered in 0.008057 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 34.33 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 33.23 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.194 seconds
+- Completed reload, in  1.153 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1210ms)
-		BeginReloadAssembly (67ms)
+	ReloadAssembly (1169ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (352ms)
-			LoadAssemblies (65ms)
+		EndReloadAssembly (340ms)
+			LoadAssemblies (58ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (119ms)
+			SetupTypeCache (114ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (158ms)
+			RebuildScriptCaches (16ms)
+			SetupLoadedEditorAssemblies (155ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (34ms)
+				RefreshPlugins (33ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (77ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				ProcessInitializeOnLoadAttributes (76ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003977 seconds.
+Registered in 0.004152 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -124,43 +124,43 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.748 seconds
+- Completed reload, in  0.680 seconds
 Domain Reload Profiling:
-	ReloadAssembly (781ms)
-		BeginReloadAssembly (132ms)
+	ReloadAssembly (701ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (578ms)
-			LoadAssemblies (61ms)
+		EndReloadAssembly (506ms)
+			LoadAssemblies (59ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (172ms)
+			SetupTypeCache (151ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (212ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (190ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (129ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (116ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1375 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 30 unused Assets / (122.2 KB). Loaded Objects now: 1853.
+Unloading 30 unused Assets / (122.1 KB). Loaded Objects now: 1853.
 Memory consumption went from 87.9 MB to 87.7 MB.
-Total: 1.989600 ms (FindLiveObjects: 0.127000 ms CreateObjectMapping: 0.041900 ms MarkObjects: 1.714900 ms  DeleteObjects: 0.104800 ms)
+Total: 1.942500 ms (FindLiveObjects: 0.106000 ms CreateObjectMapping: 0.037700 ms MarkObjects: 1.713300 ms  DeleteObjects: 0.084800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -174,19 +174,973 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 420730.833795 seconds.
-  path: Assets/Prefab/Rifle.prefab
-  artifactKey: Guid(e23d5567886266549956a0b16790ce92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Rifle.prefab using Guid(e23d5567886266549956a0b16790ce92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb8d9459a9d88c948aa6a17d19d9d5e') in 0.165310 seconds 
+  Time since last request: 435549.523380 seconds.
+  path: Assets/Prefab/NewSoldier.prefab
+  artifactKey: Guid(f17b37afc86a82d48b8eca4b01ebaae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/NewSoldier.prefab using Guid(f17b37afc86a82d48b8eca4b01ebaae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5fa308195c3d4589934c9b61067fb39') in 0.171321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.982060 seconds.
+  path: Assets/AmmoUI.cs
+  artifactKey: Guid(59f46fe8d4cb6854cb3bde36f83438d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmmoUI.cs using Guid(59f46fe8d4cb6854cb3bde36f83438d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dfe0734f2f9272c84745a583a29d16') in 0.010471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.155626 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31858aa9811287a817ef9c584839beb1') in 0.005454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.879027 seconds.
+  path: Assets/BigZombie.mat
+  artifactKey: Guid(6ca7cbf75e26fae47901cab1d42d82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BigZombie.mat using Guid(6ca7cbf75e26fae47901cab1d42d82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87c78ecdbc3608cfd28586e0ff9a052') in 0.039499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 124.074824 seconds.
+  path: Assets/Images/PNG/bubble/0.png
+  artifactKey: Guid(79dfd2b900beffa42a778dd0d590701d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/0.png using Guid(79dfd2b900beffa42a778dd0d590701d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e9450b2003b693959e5f4202aabb74a') in 0.066761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Images/PNG/settings/95.png
+  artifactKey: Guid(e71fbc2f71f71064f92e77c66b21aadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/settings/95.png using Guid(e71fbc2f71f71064f92e77c66b21aadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802e6fc56b1eada3c19722d091e45671') in 0.013575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0000.png
+  artifactKey: Guid(754decd8b29ff2d4887438010d34b179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0000.png using Guid(754decd8b29ff2d4887438010d34b179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd37155842cead950c08c10093ae94511') in 0.012692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Images/PNG/clouds/3.png
+  artifactKey: Guid(2b6e7c59eeb6fe649827ac7128ed3c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/clouds/3.png using Guid(2b6e7c59eeb6fe649827ac7128ed3c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa590113becfdd595d47a3ecdbc90993') in 0.039526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0002_jpga.png
+  artifactKey: Guid(c1d8b2e88d2c9644b9b1da7dce4fdf78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0002_jpga.png using Guid(c1d8b2e88d2c9644b9b1da7dce4fdf78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7897629f8961e93cc1c929c389b59392') in 0.016006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0001_jpga.png
+  artifactKey: Guid(1c404e65dc87986428b314a84a1e3ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0001_jpga.png using Guid(1c404e65dc87986428b314a84a1e3ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e46159bd7db4ef3fb7d6c075d2e7aed') in 0.014663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Top/images/arch.png
+  artifactKey: Guid(d24418d61b39be94384c92dfee707787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Top/images/arch.png using Guid(d24418d61b39be94384c92dfee707787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35a0e54dec73b9974f107e84acf454d6') in 0.013986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0003_jpga.png
+  artifactKey: Guid(93f73255b966b574ea09fd755cc02119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0003_jpga.png using Guid(93f73255b966b574ea09fd755cc02119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6443186fcbbfd235dd3cfc071b02cbf') in 0.014273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0003_jpga.png
+  artifactKey: Guid(164c5230607e1034582eff124b4c88e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0003_jpga.png using Guid(164c5230607e1034582eff124b4c88e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6098e1b6362cf9c2f38eb7656164267e') in 0.009799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/shop/3.png
+  artifactKey: Guid(d7228e9fadc667d4ea5c61dbb97dcd68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/shop/3.png using Guid(d7228e9fadc667d4ea5c61dbb97dcd68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47513ce54e7d06099b593a50652e85b') in 0.028719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/bubble/8.png
+  artifactKey: Guid(14fed323c15aec34fbb0a52e68bc1311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/8.png using Guid(14fed323c15aec34fbb0a52e68bc1311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0721735a8d19ce3741992725f66b5f') in 0.021487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/bubble/6.png
+  artifactKey: Guid(0b0e0ab1bf8dbbc45b7920766df44438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/6.png using Guid(0b0e0ab1bf8dbbc45b7920766df44438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a251baf6b8e7faf6a828280d55a994b5') in 0.017368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/shop/1.png
+  artifactKey: Guid(af4b0ee10252f1148b3888449e86f88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/shop/1.png using Guid(af4b0ee10252f1148b3888449e86f88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56cc7173b2022456d683e0725226ae11') in 0.015725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0005.png
+  artifactKey: Guid(3fc8f47c3c82aad4ba9eb595439d0a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0005.png using Guid(3fc8f47c3c82aad4ba9eb595439d0a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64805b256d86b501c8f8e545a83866e') in 0.013279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Images/PNG/settings/93.png
+  artifactKey: Guid(08976069b44db5a46ba8a13517acd306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/settings/93.png using Guid(08976069b44db5a46ba8a13517acd306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac702a4ad5eec41d79137444f992d22') in 0.020072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/reference/02Level_Sample.jpg
+  artifactKey: Guid(a0eeb95481fa4c240944dc07eddea7b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/reference/02Level_Sample.jpg using Guid(a0eeb95481fa4c240944dc07eddea7b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e321cfff8e1fe09beb59b576b6507261') in 0.012890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Images/PNG/shop/4.png
+  artifactKey: Guid(247e0d41954d598419bafbcb8b4a56bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/shop/4.png using Guid(247e0d41954d598419bafbcb8b4a56bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5635d544232fc1c13904de9e64ba166') in 0.015905 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000018 seconds.
-  path: Assets/Prefab/NewSoldier.prefab
-  artifactKey: Guid(7e043465bb1e91a4cbc7ec476a65f302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/NewSoldier.prefab using Guid(7e043465bb1e91a4cbc7ec476a65f302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab799c5d8d6c4eb3485127f6f45237a') in 0.107724 seconds 
+  path: Assets/Images/PNG/menu/about.png
+  artifactKey: Guid(4450639b3b3a1fa4595a4739567c4cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/menu/about.png using Guid(4450639b3b3a1fa4595a4739567c4cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8caf4789d344cbd2cb9ca0afeca9824e') in 0.030444 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Prefab/Bat.prefab
-  artifactKey: Guid(e479d6e3668ae1545841901fbac4c016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Bat.prefab using Guid(e479d6e3668ae1545841901fbac4c016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803a1b2bfcfbe240ddf6c0fb78182902') in 0.083294 seconds 
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0002_jpga.png
+  artifactKey: Guid(726de3cc68d12cc4597395c66b23984d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0002_jpga.png using Guid(726de3cc68d12cc4597395c66b23984d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022dbb9b2e5516d8257d329c8a183501') in 0.023910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Images/PNG/bubble/7.png
+  artifactKey: Guid(207d7451f67f34440b85eceb98cdba49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/7.png using Guid(207d7451f67f34440b85eceb98cdba49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39467a9b142fd7c253a1552bb36a9ac') in 0.010964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0001.png
+  artifactKey: Guid(f7cc25fbd80ac374e98f795ba0f1f86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0001.png using Guid(f7cc25fbd80ac374e98f795ba0f1f86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840abd1d4526e74551ee6c6ef3117dd6') in 0.015735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/settings/97.png
+  artifactKey: Guid(23870342b91972141872861665ea6a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/settings/97.png using Guid(23870342b91972141872861665ea6a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29feadc34884453082b4fb92ab8c7fa8') in 0.013911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0004_jpga.png
+  artifactKey: Guid(c231cf6de931ee343990975ccedf2815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0004_jpga.png using Guid(c231cf6de931ee343990975ccedf2815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98df1a28eab8b0b4a4341dbb62125f66') in 0.015856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/load_bar/3.png
+  artifactKey: Guid(3c411e849d9aeae4da790ef9551017a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/load_bar/3.png using Guid(3c411e849d9aeae4da790ef9551017a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6110d1125cb8d0d0536411b20cc678') in 0.016819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Unity/ConstraintSamples/Materials/A.png
+  artifactKey: Guid(df646550bafb34bbc8544dc1cb378d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity/ConstraintSamples/Materials/A.png using Guid(df646550bafb34bbc8544dc1cb378d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf5846de667c7529f9fb7e21905ce89') in 0.014378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Images/PNG/settings/94.png
+  artifactKey: Guid(7c0f8873250dbb4459122bb4b72b6a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/settings/94.png using Guid(7c0f8873250dbb4459122bb4b72b6a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5359db37b94c051354dbbee0811885d8') in 0.019518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Images/PNG/clouds/4.png
+  artifactKey: Guid(ea985f9c315778e44b6091ccd084bbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/clouds/4.png using Guid(ea985f9c315778e44b6091ccd084bbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b25578c000fd3770132fe71dcad8f18') in 0.029608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0000_jpga.png
+  artifactKey: Guid(24c2050a64ef0764d8ed771195cd4f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/arch0000_jpga.png using Guid(24c2050a64ef0764d8ed771195cd4f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80b888869269f30a0aae29de63147a1') in 0.008818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c675fe6ee648254e5bcde3af1b857d6') in 0.039577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/reference/01Level_Sample.jpg
+  artifactKey: Guid(35726164ea0bddb478602ac37272ef05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/reference/01Level_Sample.jpg using Guid(35726164ea0bddb478602ac37272ef05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ac41479aa3d74f165833bfdbe65be3') in 0.016698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0000_jpga.png
+  artifactKey: Guid(27cc118a647e92d4abd636bf985a48ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0000_jpga.png using Guid(27cc118a647e92d4abd636bf985a48ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462d1dcaa55b26fc916cdb354ae6f899') in 0.015076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0004.png
+  artifactKey: Guid(f6ef0bdbdf49e04469d7df6c5b40e286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0004.png using Guid(f6ef0bdbdf49e04469d7df6c5b40e286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533fd3119300b7d7e65af1115bbe23e4') in 0.009085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Images/PNG/settings/98.png
+  artifactKey: Guid(fb4875dc0c9ae4a418accffdaa0eca8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/settings/98.png using Guid(fb4875dc0c9ae4a418accffdaa0eca8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2d614c0b304090dce2e32fd38b5cdb') in 0.014217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/clouds/2.png
+  artifactKey: Guid(3908a996f3d34814896a741d73b661de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/clouds/2.png using Guid(3908a996f3d34814896a741d73b661de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ba2175a6106311c70fbf7f5913deeb') in 0.032231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Images/PNG/bubble/3.png
+  artifactKey: Guid(9f8392d8de888804f9fe62b0c2d23cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/3.png using Guid(9f8392d8de888804f9fe62b0c2d23cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe03f778fa517f02908c82b92167e61') in 0.010135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0004_jpga.png
+  artifactKey: Guid(4555ae9c91a94bb48a2e178828f6c5f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0004_jpga.png using Guid(4555ae9c91a94bb48a2e178828f6c5f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ad0cc4e6920142dfa6959c128fc335') in 0.008387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0003.png
+  artifactKey: Guid(05762778bf63de24190d504c1dbf881c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0003.png using Guid(05762778bf63de24190d504c1dbf881c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b21629ec4c4a59858b3ba88108ca4e') in 0.012608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0001_jpga.png
+  artifactKey: Guid(d28e9fab5118fd845a6fbefcfecc707c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0001_jpga.png using Guid(d28e9fab5118fd845a6fbefcfecc707c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640c4c6d5fe52448b04728667e0e4bba') in 0.011305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Images/PNG/bubble/9.png
+  artifactKey: Guid(edb91a20e97152143844ef7a0921c6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/9.png using Guid(edb91a20e97152143844ef7a0921c6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e92804ef20f217f3bb943cc4a4f26e1f') in 0.010649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Images/PNG/load_bar/1.png
+  artifactKey: Guid(93e6b041985a7934eb14a659dc048f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/load_bar/1.png using Guid(93e6b041985a7934eb14a659dc048f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a290b202a5d01fd999a6fbbfd0a7b90b') in 0.014437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Images/PNG/load_bar/2.png
+  artifactKey: Guid(72ba989549a22e041a6d0268a800f0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/load_bar/2.png using Guid(72ba989549a22e041a6d0268a800f0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b3d9008c89d02f00e84c62ea8a97df') in 0.012468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Images/PNG/upgrade/a.png
+  artifactKey: Guid(de01b1d6013665f4eaf002f046b196b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/upgrade/a.png using Guid(de01b1d6013665f4eaf002f046b196b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24c44b74e76b1d560d44e3a300232d32') in 0.013753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/bubble/1.png
+  artifactKey: Guid(29ae7c4e413d1a640a8ef3187ed7a080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/1.png using Guid(29ae7c4e413d1a640a8ef3187ed7a080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5d12c9baeaec1fcf72fbc04ea228f2') in 0.015473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Images/PNG/settings/92.png
+  artifactKey: Guid(32e85f6cdd6415e44ae0034d6604891d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/settings/92.png using Guid(32e85f6cdd6415e44ae0034d6604891d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff96154599c458ce011c199bfcb4464') in 0.033595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Images/PNG/bubble/4.png
+  artifactKey: Guid(b3d45e729a03f4b4182410518cc86c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/4.png using Guid(b3d45e729a03f4b4182410518cc86c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b93a5c593a52de73be061426f829f6e1') in 0.015148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0005_jpga.png
+  artifactKey: Guid(b3952465424e4d141b665cb3812132d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/arch0005_jpga.png using Guid(b3952465424e4d141b665cb3812132d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d1e092283432bfd9cce105b8aba087') in 0.008986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/clouds/1.png
+  artifactKey: Guid(86ef842c4915bbe4fac0533bc5b972ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/clouds/1.png using Guid(86ef842c4915bbe4fac0533bc5b972ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d98b8f7218b9f2f552845f3c397c93a') in 0.023338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0002.png
+  artifactKey: Guid(bc499a0f52f6f6e46acf9c29ea4e0496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/arch0002.png using Guid(bc499a0f52f6f6e46acf9c29ea4e0496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe1f3c39579caeb73b4f650df7d11018') in 0.012866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Unity/ConstraintSamples/Materials/AB.png
+  artifactKey: Guid(fb7e3d821132d42bbbc37a4b177c2a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity/ConstraintSamples/Materials/AB.png using Guid(fb7e3d821132d42bbbc37a4b177c2a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046dcaeac9f787ae19f7457c5254bcbf') in 0.016116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/btn/about.png
+  artifactKey: Guid(c59818d40f6a1514c8c87fadb061edcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/btn/about.png using Guid(c59818d40f6a1514c8c87fadb061edcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199b279de3933d69f86895c7cd0f0ab9') in 0.016787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Images/PNG/bubble/2.png
+  artifactKey: Guid(61000c2f71a0b3044af08b59bb3f75fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/2.png using Guid(61000c2f71a0b3044af08b59bb3f75fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63b8ea818ac89115e6c8c8b6ca9970c') in 0.010217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/bubble/5.png
+  artifactKey: Guid(72a9cb561ffe6e54c892c18b23a62100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/bubble/5.png using Guid(72a9cb561ffe6e54c892c18b23a62100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450913474e8c443f059de0e36ca8f184') in 0.010537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Images/PNG/shop/2.png
+  artifactKey: Guid(3cc8b357524fd104d942dfc6b2947f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/shop/2.png using Guid(3cc8b357524fd104d942dfc6b2947f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9900c3dfb8646a910e88c4aab85d4cb') in 0.023252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Images/PNG/settings/96.png
+  artifactKey: Guid(7738828aba4eb214eaf4e2a393532e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/settings/96.png using Guid(7738828aba4eb214eaf4e2a393532e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb6b25267818e0d38e8693f891b4de4') in 0.015094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.316161 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg
+  artifactKey: Guid(6eb184de103d4b3f812b38561065192f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg using Guid(6eb184de103d4b3f812b38561065192f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b1ace81cda6e40285a833c699d0482') in 0.011611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Top/JPGA/WizardHat1_jpga.png
+  artifactKey: Guid(4bf3083c949e1a441963f7d2762f327c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Top/JPGA/WizardHat1_jpga.png using Guid(4bf3083c949e1a441963f7d2762f327c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '647d31483fc2833f38fbab49711dc5bd') in 0.010514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0003_jpga.png
+  artifactKey: Guid(0f7ce1201d684db40b6c75bd16f1f53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0003_jpga.png using Guid(0f7ce1201d684db40b6c75bd16f1f53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2206e1fc4b05988936ff21c1118afe5') in 0.011174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0007_jpga.png
+  artifactKey: Guid(a94c47520938e3344a9edc5b0d65b9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0007_jpga.png using Guid(a94c47520938e3344a9edc5b0d65b9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf90bd9e921686e801187b729e8dbab') in 0.011359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0005_jpga.png
+  artifactKey: Guid(1ea7134414b7a5c438b5c17455c363ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0005_jpga.png using Guid(1ea7134414b7a5c438b5c17455c363ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61dcab62d76b47132ae71a8ecc6b2e82') in 0.009576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0005.png
+  artifactKey: Guid(599fb1bdd7c4cd5439d91980eb61e6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0005.png using Guid(599fb1bdd7c4cd5439d91980eb61e6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89255e02eff5775753328c6a1eb717e9') in 0.009756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/ToonyTiny_Citizens_Megapack.tga
+  artifactKey: Guid(44aec3aaa337c294c9265a35fa489440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/ToonyTiny_Citizens_Megapack.tga using Guid(44aec3aaa337c294c9265a35fa489440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dadc943b6405e8f44eaf3f0ddf2ae17d') in 0.013010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0001.png
+  artifactKey: Guid(514d34b0971be8d45a060a4229a54c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0001.png using Guid(514d34b0971be8d45a060a4229a54c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0856559a2078be280fda168edc363cae') in 0.012434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0004_jpga.png
+  artifactKey: Guid(6259e5f050ee3044cbb91708c6df0af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0004_jpga.png using Guid(6259e5f050ee3044cbb91708c6df0af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc904a0d940b2565dd25e6d5d322f1ef') in 0.011667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0006.png
+  artifactKey: Guid(0bfb50adff174e940b6dd1babfb6d870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0006.png using Guid(0bfb50adff174e940b6dd1babfb6d870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47254790571bf4cb0bf1b91f0f6796aa') in 0.011409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Images/PNG/menu/prize.png
+  artifactKey: Guid(a3fd8b905a8966a4ebacb269b1781b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/menu/prize.png using Guid(a3fd8b905a8966a4ebacb269b1781b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0d8d563e311000f50d6dc4fb585dea') in 0.016725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0004_jpga.png
+  artifactKey: Guid(80a4a07e09399aa49a28cce92e7a5fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0004_jpga.png using Guid(80a4a07e09399aa49a28cce92e7a5fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38409522e11590a65d831bea66c35be') in 0.012740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0000_jpga.png
+  artifactKey: Guid(c35e3d3e383f4da449590da323e8cce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0000_jpga.png using Guid(c35e3d3e383f4da449590da323e8cce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55cba55825c059c84db96473181b61c0') in 0.012169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0005.png
+  artifactKey: Guid(680af44b575fc6d4a86d0740b1d75ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0005.png using Guid(680af44b575fc6d4a86d0740b1d75ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a5e1caead828e64df4258261583ade3') in 0.008645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0001.png
+  artifactKey: Guid(e1d2e8fe213311b4b99d542467ea4dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0001.png using Guid(e1d2e8fe213311b4b99d542467ea4dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5610f10fb143d8bc21215d91c3d6818') in 0.008197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0002_jpga.png
+  artifactKey: Guid(690241e0a661a80418778fc63a1badc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0002_jpga.png using Guid(690241e0a661a80418778fc63a1badc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aedaae85a2b343a6a39868bd0ae8ff7') in 0.008986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0002.png
+  artifactKey: Guid(535e7038f393d3342a0e618324a8da92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0002.png using Guid(535e7038f393d3342a0e618324a8da92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c66a7b3da1d64997f4d17a03303d26') in 0.011273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0006_jpga.png
+  artifactKey: Guid(bb6e8a82a7c84de46aa0e55c7f306052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0006_jpga.png using Guid(bb6e8a82a7c84de46aa0e55c7f306052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa5ad333098a4cf954f199e116973b3') in 0.012205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0002_jpga.png
+  artifactKey: Guid(2368ea82eb6334e4ab591d5b842711a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0002_jpga.png using Guid(2368ea82eb6334e4ab591d5b842711a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c04b91a37ae9b2519ca8b94dfb8512') in 0.017975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/ToonyTiny_Zombies_Pack.tga
+  artifactKey: Guid(a8ce17bada18e924aa21047ff4b1beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/ToonyTiny_Zombies_Pack.tga using Guid(a8ce17bada18e924aa21047ff4b1beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f477294bf3347b57d0dd7907bc1a22d1') in 0.012603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0000.png
+  artifactKey: Guid(3066804c4fc7ec245a1cb03ff02e27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0000.png using Guid(3066804c4fc7ec245a1cb03ff02e27a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70761a32aafbf48b4a721fac83c131a') in 0.015441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0001_jpga.png
+  artifactKey: Guid(c81c3e99efd1bed4fa73586aa5242e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0001_jpga.png using Guid(c81c3e99efd1bed4fa73586aa5242e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32eb29b408f22ef1ee9551b4ea9f28e') in 0.012875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0004.png
+  artifactKey: Guid(32d759db5c186c246b231f415ffdc5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0004.png using Guid(32d759db5c186c246b231f415ffdc5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d05bedb46885efcd5782bfd9c45f18') in 0.009147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0000.png
+  artifactKey: Guid(fd62f8d764ed5b549bf87095e0ba6bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0000.png using Guid(fd62f8d764ed5b549bf87095e0ba6bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d8b545c46a8e77db0f501da53af6b9') in 0.010236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd
+  artifactKey: Guid(bb8dfcd263ad4eb383a33d74a720be6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd using Guid(bb8dfcd263ad4eb383a33d74a720be6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c653abe83141fa2ddce0551ac451454') in 0.015355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0007.png
+  artifactKey: Guid(70f3cf4644993294c8b46c0c23344de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0007.png using Guid(70f3cf4644993294c8b46c0c23344de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba06122fe1b4fcb0809472da14bcb63') in 0.010617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Top/images/WizardHat1.png
+  artifactKey: Guid(22b6447da33414d4bbb52baba592a2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Top/images/WizardHat1.png using Guid(22b6447da33414d4bbb52baba592a2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bbf841c35c6ca04073ca12f39f29298') in 0.012415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0003.png
+  artifactKey: Guid(601082f0f226601459eacd5964bfae5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0003.png using Guid(601082f0f226601459eacd5964bfae5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e99907e0831147479f997fa4788cba6') in 0.013414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0002.png
+  artifactKey: Guid(5ecfc31282414524ca99b1344f728593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0002.png using Guid(5ecfc31282414524ca99b1344f728593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9b34edd60a4551ee4a129710a6b095a') in 0.013749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0004.png
+  artifactKey: Guid(b8f0f8572d94aa84696f4b6a92682b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0004.png using Guid(b8f0f8572d94aa84696f4b6a92682b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7ae19294a6fc7b3c174be8ef406628') in 0.015441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0005_jpga.png
+  artifactKey: Guid(192fae2576637f94fbcf613043b40bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0005_jpga.png using Guid(192fae2576637f94fbcf613043b40bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c09e64b0dd8855a9a42db805bb7ffef') in 0.008331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0007.png
+  artifactKey: Guid(fa5cc9a41559e424e92e094356b7879b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/WizardHat0007.png using Guid(fa5cc9a41559e424e92e094356b7879b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be56640e15010fc92458650badd0e149') in 0.007924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0000_jpga.png
+  artifactKey: Guid(062a3da73d39a944ab6344c58235d9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0000_jpga.png using Guid(062a3da73d39a944ab6344c58235d9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4de5d4e1a1b231aa734fc45ea733964f') in 0.009923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0006_jpga.png
+  artifactKey: Guid(712f5696c13d84442aad2831df194969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0006_jpga.png using Guid(712f5696c13d84442aad2831df194969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80628676fd56c19bb0a8d7f3ce09fc35') in 0.013843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0001_jpga.png
+  artifactKey: Guid(bdabf8da8d2af9b41809fb626dfc7153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/WizardHat0001_jpga.png using Guid(bdabf8da8d2af9b41809fb626dfc7153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce3af72da25fc32ca4fdf8aeb4c9cb5') in 0.010535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0007_jpga.png
+  artifactKey: Guid(c7d3f39872660bb48b867d2a97ea31b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0007_jpga.png using Guid(c7d3f39872660bb48b867d2a97ea31b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c41d802e20d8da918df08c3d3f40b2') in 0.017834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0003.png
+  artifactKey: Guid(b2fdd524cab2e8a48904495f5e84ce16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0003.png using Guid(b2fdd524cab2e8a48904495f5e84ce16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e373067258d820d87a86ce26cb6fe90d') in 0.013239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Images/PNG/btn/prize.png
+  artifactKey: Guid(5e096a3215178b44cb6d92c4195f7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/PNG/btn/prize.png using Guid(5e096a3215178b44cb6d92c4195f7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618ce3431abb0a92bf4736200ad9ab9e') in 0.015397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0003_jpga.png
+  artifactKey: Guid(6b6628611e4d9c04a9b1f84bb7cb5ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/WizardHat0003_jpga.png using Guid(6b6628611e4d9c04a9b1f84bb7cb5ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee5aa41f235a4bf79d4967648ddf3ba') in 0.008099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0006.png
+  artifactKey: Guid(66bae766952c2fe44835912cdea5debb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/WizardHat0006.png using Guid(66bae766952c2fe44835912cdea5debb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dcb7580ce19be3fafac4df6f94848e') in 0.007832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.998167 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/Materials/TT_demo.mat
+  artifactKey: Guid(8fd192304df88db499eedb3456dc6d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/Materials/TT_demo.mat using Guid(8fd192304df88db499eedb3456dc6d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4faa064e4617e403d30ef9af34da84') in 0.015998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ToonyTinyPeople/TT_demo/models/Materials/TT_demo_texture.tga
+  artifactKey: Guid(7a97bf571a8477f449be264c891871e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_demo/models/Materials/TT_demo_texture.tga using Guid(7a97bf571a8477f449be264c891871e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1f532ef18bb0de9ddab1f946cd9292') in 0.010816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.610520 seconds.
+  path: Assets/BigZombie.mat
+  artifactKey: Guid(6ca7cbf75e26fae47901cab1d42d82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BigZombie.mat using Guid(6ca7cbf75e26fae47901cab1d42d82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a41a976a82f4e07b338384a1a7ae94c') in 0.012689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.728852 seconds.
+  path: Assets/UISample
+  artifactKey: Guid(188a599ca77c53d42ae4dc9a6b1e32da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UISample using Guid(188a599ca77c53d42ae4dc9a6b1e32da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c1f67140745954e4536edf91104357') in 0.007188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.500437 seconds.
+  path: Assets/RapidZombie.mat
+  artifactKey: Guid(96153a9ffa019cc40abae6bdc947afdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RapidZombie.mat using Guid(96153a9ffa019cc40abae6bdc947afdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce7d3885d9c24363c591ac270b86e63') in 0.013721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.567943 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Top/images/BoulderSpike.png
+  artifactKey: Guid(00f58144a0e708c438679ae6c68534a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Top/images/BoulderSpike.png using Guid(00f58144a0e708c438679ae6c68534a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1ecdccadbca0689d552a744021671e') in 0.016110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0002.png
+  artifactKey: Guid(0fcd0130db1b2f64f9de99ebdd75ed93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0002.png using Guid(0fcd0130db1b2f64f9de99ebdd75ed93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da97519524f73b5c1dbd806da486dab8') in 0.013846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0001_jpga.png
+  artifactKey: Guid(8d7f94e5b9c20f142b402b4cc1c03496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0001_jpga.png using Guid(8d7f94e5b9c20f142b402b4cc1c03496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afd92862b0f7374f19b583e3c5e1eda') in 0.012909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0001_jpga.png
+  artifactKey: Guid(8e8ff0d9c5fdf0e44a5376fd983ef663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0001_jpga.png using Guid(8e8ff0d9c5fdf0e44a5376fd983ef663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8169b3068fee714cd703bc02713dc628') in 0.012248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0001.png
+  artifactKey: Guid(bb7b85f2ce9ccd94e8e756e7b7fe994b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0001.png using Guid(bb7b85f2ce9ccd94e8e756e7b7fe994b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b11da355fbd9f999b2337a6b457693') in 0.009627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0002_jpga.png
+  artifactKey: Guid(6b87ffe8a0067a044944a0a3d1e2e364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0002_jpga.png using Guid(6b87ffe8a0067a044944a0a3d1e2e364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9057b0d323ac72ea2978f267b9376c3e') in 0.013761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0005_jpga.png
+  artifactKey: Guid(1231628fd2a0c2c41a6b8677b1e5035b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0005_jpga.png using Guid(1231628fd2a0c2c41a6b8677b1e5035b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677fcd709ec7aedf7fada6cd7c6abbfa') in 0.010559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0004_jpga.png
+  artifactKey: Guid(f7a1f46deb34bc24aa241fec290642f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0004_jpga.png using Guid(f7a1f46deb34bc24aa241fec290642f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f0eb3eaed086c66c116abdb86d19ec') in 0.014635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0000.png
+  artifactKey: Guid(7953e77d0b8ccfa419adc762dcfed12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0000.png using Guid(7953e77d0b8ccfa419adc762dcfed12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696bfc545d863587a7d0429172ebff3a') in 0.015716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0004_jpga.png
+  artifactKey: Guid(8728eaf64b8ec7e44a33472969142420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0004_jpga.png using Guid(8728eaf64b8ec7e44a33472969142420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df401634034708732a80a950b754b173') in 0.012443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0005.png
+  artifactKey: Guid(c7e31af86c8db374988fb54b17bcaa54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0005.png using Guid(c7e31af86c8db374988fb54b17bcaa54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee6f76cbb5addda6800a641ee61ebe2') in 0.013976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0003_jpga.png
+  artifactKey: Guid(1dbd9423fb6b71b4389b900d676b6678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0003_jpga.png using Guid(1dbd9423fb6b71b4389b900d676b6678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c92c3604818760996c47c6e3ff93e94') in 0.013829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0003_jpga.png
+  artifactKey: Guid(6cd674afb9c2e3846ae94858c202f5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0003_jpga.png using Guid(6cd674afb9c2e3846ae94858c202f5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e7279673609731a6d882b5bcee19f6') in 0.008862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0003_jpga.png
+  artifactKey: Guid(8093fc3884926b14a8c0d73fcad32633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0003_jpga.png using Guid(8093fc3884926b14a8c0d73fcad32633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd4e19e7f7ca844403e1733d6a1b308') in 0.010486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0005_jpga.png
+  artifactKey: Guid(70167a9f67bbaf24fb762f0b3b14c76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0005_jpga.png using Guid(70167a9f67bbaf24fb762f0b3b14c76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde915c6c33aa6ed569c81d22505df35') in 0.012498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0004_jpga.png
+  artifactKey: Guid(58b49178dcf009b46af651975bb38d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0004_jpga.png using Guid(58b49178dcf009b46af651975bb38d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4ce037dccd426f3a26748bf67bc25e') in 0.012115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0003.png
+  artifactKey: Guid(3fb360b3f3240eb489bdc7012b55fce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0003.png using Guid(3fb360b3f3240eb489bdc7012b55fce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c102106e1e7f9baae1533672a32ac58') in 0.015936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0005_jpga.png
+  artifactKey: Guid(c724372ccac462d43bcdfc73596866b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0005_jpga.png using Guid(c724372ccac462d43bcdfc73596866b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605b0b1c2ffa604d1a5484af7c933033') in 0.010047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0003_jpga.png
+  artifactKey: Guid(e265761771ecfeb4cb3671eac8f92af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0003_jpga.png using Guid(e265761771ecfeb4cb3671eac8f92af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f926341992c047f2b6fc946990a6029') in 0.010681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0007_jpga.png
+  artifactKey: Guid(c7f26b1b3aaf34843953c51ab1a6a8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0007_jpga.png using Guid(c7f26b1b3aaf34843953c51ab1a6a8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98104de1f817c7fc1c5b1b8f3fc39db4') in 0.012166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0007_jpga.png
+  artifactKey: Guid(52a34fc63d65d28459355808663d5e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0007_jpga.png using Guid(52a34fc63d65d28459355808663d5e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9c8e5fd86ba749415b3d56a757f41c') in 0.010575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0004.png
+  artifactKey: Guid(c05db38c24a73ef469d410c63b44cac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0004.png using Guid(c05db38c24a73ef469d410c63b44cac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08df8f9033d924e4a6531d65d43a8453') in 0.011440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0002_jpga.png
+  artifactKey: Guid(b2f159fb7a2273c438e9c0ec846693ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0002_jpga.png using Guid(b2f159fb7a2273c438e9c0ec846693ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950d4b4bb896a130333d4aed6babf49b') in 0.012768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0003.png
+  artifactKey: Guid(9905f735b1655af49a65a9ec4db8f4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0003.png using Guid(9905f735b1655af49a65a9ec4db8f4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00490f1c8427a8a5b7b13e2c3d2c2fd') in 0.008941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0002_jpga.png
+  artifactKey: Guid(573cdea4508874646b1102117ae2e5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0002_jpga.png using Guid(573cdea4508874646b1102117ae2e5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f746c33f8648beba0bf34ac47e752427') in 0.012906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0000_jpga.png
+  artifactKey: Guid(40f80a91a0d8d9446b4cfe32293ea847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0000_jpga.png using Guid(40f80a91a0d8d9446b4cfe32293ea847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258e5575b9704d4e140292407841ecc1') in 0.009232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0004_jpga.png
+  artifactKey: Guid(5a0141a29f5ff3643aa2bf42793f5495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0004_jpga.png using Guid(5a0141a29f5ff3643aa2bf42793f5495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58d150fe141555356f5e15531b79580') in 0.011900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0006.png
+  artifactKey: Guid(5e479a802a548df4da7ca9b25d94dfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0006.png using Guid(5e479a802a548df4da7ca9b25d94dfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10839b1c44f0dbba33171116bec9fba3') in 0.008376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0002.png
+  artifactKey: Guid(372450b0f3c62c341ac18c98be4c6590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0002.png using Guid(372450b0f3c62c341ac18c98be4c6590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1135e3e339af8dbffe136f221fd1ce45') in 0.009396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0006_jpga.png
+  artifactKey: Guid(e0e0c2d4a90af7443893ebbe0b7484b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0006_jpga.png using Guid(e0e0c2d4a90af7443893ebbe0b7484b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da36d6cbe992f5dfadcc8e9dbd56314') in 0.010766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0001_jpga.png
+  artifactKey: Guid(15c25f71c68c59c43826d8d08ee0d5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/boxWooden0001_jpga.png using Guid(15c25f71c68c59c43826d8d08ee0d5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b722f3db1aea30cecad0e63544506ea') in 0.011488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0006.png
+  artifactKey: Guid(6a924423ac487cd4a8e5a33cbd3494d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0006.png using Guid(6a924423ac487cd4a8e5a33cbd3494d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262e27b148fa06d8a8b26ef16c480026') in 0.009318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0001.png
+  artifactKey: Guid(948549599d74aa04383e9b5a18c6449e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0001.png using Guid(948549599d74aa04383e9b5a18c6449e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3c7a1c753b095c1dde5005d9f03bdf') in 0.012339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0006.png
+  artifactKey: Guid(7af97be9424338c40b40ccd69c025caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0006.png using Guid(7af97be9424338c40b40ccd69c025caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c40591429c75b36ff9a9115d6ee830f') in 0.009339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0000.png
+  artifactKey: Guid(21d5486aa67166c4e9eed24c377370c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0000.png using Guid(21d5486aa67166c4e9eed24c377370c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '659c724e8335fdaf17c3aaa7396ed20d') in 0.011632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0000_jpga.png
+  artifactKey: Guid(4e1a46ab69e075b47a0d602514039300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0000_jpga.png using Guid(4e1a46ab69e075b47a0d602514039300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d21d3aaecf0c477392c31c36014ecc') in 0.009158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0000_jpga.png
+  artifactKey: Guid(397e853dd8103db4282a84eee55aec9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0000_jpga.png using Guid(397e853dd8103db4282a84eee55aec9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c34c328dd1247899f5dc3e48e53672e') in 0.012316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0003.png
+  artifactKey: Guid(ae2b32788c2a2fe4d83b674703c86855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0003.png using Guid(ae2b32788c2a2fe4d83b674703c86855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e526c2791065eb35e17bd872325af7') in 0.010530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0005.png
+  artifactKey: Guid(d8c9834a4292b2f428fb0190dd90b977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0005.png using Guid(d8c9834a4292b2f428fb0190dd90b977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80769a58eb2e5d5c0aed29c4769c41fe') in 0.012783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0006_jpga.png
+  artifactKey: Guid(0b5ae78e660e1d54d915b31792b75be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/JPGA/BoulderSpike0006_jpga.png using Guid(0b5ae78e660e1d54d915b31792b75be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd5a6f4807a86b3bb20b1779a5b71f4') in 0.010809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0005.png
+  artifactKey: Guid(857494a9531264b45b2681b23c7e9819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0005.png using Guid(857494a9531264b45b2681b23c7e9819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b859228067a10c6706618abaad4f3fb') in 0.013611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0000.png
+  artifactKey: Guid(d6f3308726058454f9ea79b4c0e9bc6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0000.png using Guid(d6f3308726058454f9ea79b4c0e9bc6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '320ff166c008031d71a92c1d6bc0544c') in 0.011079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0001.png
+  artifactKey: Guid(b1d45c6399a0b044cb8a43215d25b242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0001.png using Guid(b1d45c6399a0b044cb8a43215d25b242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b498f1bf7397452ba43a3ed4b824e75f') in 0.010150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0004.png
+  artifactKey: Guid(89cf0e5e06d32df48979197f7a9f890e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0004.png using Guid(89cf0e5e06d32df48979197f7a9f890e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b009795ee05de3a608b763544927f9c4') in 0.009017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0005_jpga.png
+  artifactKey: Guid(8ef435021af6a52468d1621073f4e3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0005_jpga.png using Guid(8ef435021af6a52468d1621073f4e3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30bc06e1925c6d7d10407b49536bd26f') in 0.009799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0004.png
+  artifactKey: Guid(9c36bc37470e1d04ab410c08b5412b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0004.png using Guid(9c36bc37470e1d04ab410c08b5412b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73137786a05711ce3c15b232aaaf9a0a') in 0.008517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0001_jpga.png
+  artifactKey: Guid(a21728353c56b1649b6c1e69885027e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0001_jpga.png using Guid(a21728353c56b1649b6c1e69885027e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7734c4ec38d3d18e8b325ea91beddc63') in 0.007596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0002.png
+  artifactKey: Guid(9de167e8558832c408d51397e12c9d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/boxWooden0002.png using Guid(9de167e8558832c408d51397e12c9d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58ae0c6aefcbb77c87f48db5b18900c') in 0.011236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0002_jpga.png
+  artifactKey: Guid(de40d1feb3867704b8b0b1b447b341e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/BoulderSpike0002_jpga.png using Guid(de40d1feb3867704b8b0b1b447b341e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0230ef604cfc18e8aff8b4b08e88d0bc') in 0.015397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0000_jpga.png
+  artifactKey: Guid(adfee67928c0a124b930f429a45f54ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/JPGA/boxWooden0000_jpga.png using Guid(adfee67928c0a124b930f429a45f54ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3422afc001f57150cb1670ff4cea5172') in 0.011008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0007.png
+  artifactKey: Guid(c2ab13c6c2d531c4593e1d22f7202745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Front/images/BoulderSpike0007.png using Guid(c2ab13c6c2d531c4593e1d22f7202745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9853ad5e3b4ba2957f250edc8861d5f9') in 0.008669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Top/JPGA/BoulderSpike_jpga.png
+  artifactKey: Guid(39cdcd57fbefdbf498f1fb9e67160aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Top/JPGA/BoulderSpike_jpga.png using Guid(39cdcd57fbefdbf498f1fb9e67160aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5771176088e600537fb033b4da539265') in 0.009148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Top/images/boxWooden.png
+  artifactKey: Guid(3a586af005182074a8b8e450396c6755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Top/images/boxWooden.png using Guid(3a586af005182074a8b8e450396c6755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1544f0b23f399daa634152a05efa3843') in 0.011074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0007.png
+  artifactKey: Guid(6da0b706915df9548baa7bfcaa002a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets_DevilsWorkshop/2D/View-Ortho/images/BoulderSpike0007.png using Guid(6da0b706915df9548baa7bfcaa002a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2323e8d5deedda29e82361a1ef2635') in 0.009469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.695111 seconds.
+  path: Assets/Tiny_Toony_City_Demo/Textures/T_Cars_Demo.tga
+  artifactKey: Guid(6374cc3bb4fbf5c4e84e3392d170f6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny_Toony_City_Demo/Textures/T_Cars_Demo.tga using Guid(6374cc3bb4fbf5c4e84e3392d170f6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8074fc708fc217beaab3661a6451843') in 0.008226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/ToonyTinyPeople/TT_soldiers_Demo/model/materials/TTS_Demo_texture.tga
+  artifactKey: Guid(6ad795c0cb8b5bb40bd0d43fb13dc0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_soldiers_Demo/model/materials/TTS_Demo_texture.tga using Guid(6ad795c0cb8b5bb40bd0d43fb13dc0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93eece7e151b807c01125c06c30a6bf') in 0.009218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo_texture.tga
+  artifactKey: Guid(a80a727671e675149954421e86769a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo_texture.tga using Guid(a80a727671e675149954421e86769a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19726524150a15c26d52d423931160a0') in 0.010168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Tiny_Toony_City_Demo/Textures/T_City_Demo.tga
+  artifactKey: Guid(192885429fbe4974fbbafa38563e959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny_Toony_City_Demo/Textures/T_City_Demo.tga using Guid(192885429fbe4974fbbafa38563e959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebd2a84dddfc07ff5ae34a37c800a52') in 0.009383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.436870 seconds.
+  path: Assets/RapidZombie.mat
+  artifactKey: Guid(96153a9ffa019cc40abae6bdc947afdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RapidZombie.mat using Guid(96153a9ffa019cc40abae6bdc947afdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31fd9c11ae96fc79fb87f0b44761ef20') in 0.014616 seconds 

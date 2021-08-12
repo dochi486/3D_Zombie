@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1912153965}
-  m_PathPosition: -13.08
+  m_PathPosition: -8.502298
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1273063311}
-  m_PathPosition: -13.08
+  m_PathPosition: 2.104878
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -1140,7 +1140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 647525568}
-  m_PathPosition: 4.636662
+  m_PathPosition: 8.505327
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -2806,7 +2806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1004981795}
-  m_PathPosition: 1.395399
+  m_PathPosition: 1.461866
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -3604,6 +3604,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6040105551821832494, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 96153a9ffa019cc40abae6bdc947afdb, type: 2}
+    - target: {fileID: 6040105551831405642, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 96153a9ffa019cc40abae6bdc947afdb, type: 2}
     - target: {fileID: 6355002735739292577, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: m_Name
       value: RapidZombie
@@ -3619,6 +3627,18 @@ PrefabInstance:
     - target: {fileID: 6355002735739292583, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355002735739292583, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.93764
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355002735739292583, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.93764
+      objectReference: {fileID: 0}
+    - target: {fileID: 6355002735739292583, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.93764
       objectReference: {fileID: 0}
     - target: {fileID: 6355002735739292583, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3972,7 +3992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.24151446, y: 0.054148737, z: -0.013498989, w: 0.96879125}
-  m_LocalPosition: {x: -22.591787, y: 7.8323445, z: -14.640966}
+  m_LocalPosition: {x: -22.308884, y: 8.321891, z: -0.003791809}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4064,7 +4084,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.84675837, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4407,7 +4427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1136635915}
-  m_PathPosition: 0.1571274
+  m_PathPosition: 14.80522
   m_PositionUnits: 1
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -5361,7 +5381,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.84675837, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5602,7 +5622,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.84675837, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7133,7 +7153,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.84675837, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7457,6 +7477,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6040105551821832494, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ca7cbf75e26fae47901cab1d42d82a1, type: 2}
+    - target: {fileID: 6040105551831405642, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ca7cbf75e26fae47901cab1d42d82a1, type: 2}
     - target: {fileID: 6355002735739292577, guid: ff028e5ced125a84bac7058dee14a506, type: 3}
       propertyPath: m_Name
       value: BigZombie
@@ -7986,7 +8014,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.84675837, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8343,7 +8371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193550742327843314, guid: 2a54f0212edd13846862cd05734fee79, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.23
       objectReference: {fileID: 0}
     - target: {fileID: 193550742327843314, guid: 2a54f0212edd13846862cd05734fee79, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8611,11 +8639,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 399889323599608168, guid: f17b37afc86a82d48b8eca4b01ebaae1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.95
+      value: -22.44
       objectReference: {fileID: 0}
     - target: {fileID: 399889323599608168, guid: f17b37afc86a82d48b8eca4b01ebaae1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 399889323599608168, guid: f17b37afc86a82d48b8eca4b01ebaae1, type: 3}
       propertyPath: m_LocalPosition.z
