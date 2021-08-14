@@ -581,10 +581,10 @@ MonoBehaviour:
   m_Data:
     m_ConstrainedObject: {fileID: 3817229202550935411}
     m_SourceObjects:
-      m_Length: 0
+      m_Length: 1
       m_Item0:
-        transform: {fileID: 0}
-        weight: 0
+        transform: {fileID: 1969371733965123786}
+        weight: 1
       m_Item1:
         transform: {fileID: 0}
         weight: 0
@@ -1641,7 +1641,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4513109760415706470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.122787885, y: -0.122787885, z: -0.6963642, w: 0.6963642}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
