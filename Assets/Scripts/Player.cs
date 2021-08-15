@@ -249,9 +249,11 @@ public partial class Player : Character
         //    return;
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //스크린 포인트를 ray로 변경한다. (마우스 포지션을 ray로 변경하겠다)
 
-        if (plane.Raycast(ray, out float enter))
+        if (plane.Raycast(ray, out float enter)) //카메라에서부터 레이 체크를 위해 만들었던 무한한 평면 plane까지 레이를 쏘고 그 결과값 enter를 out파라미터로 반환
         {
+            //충돌 지점이 enter에 담기고 그 enter를 GetPoint해서 Vector3의 hitpoint로 사용
             Vector3 hitPoint = ray.GetPoint(enter);
             Vector3 dir = hitPoint - transform.position;
             dir.y = 0;
