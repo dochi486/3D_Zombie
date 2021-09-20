@@ -146,7 +146,7 @@ public class Zombie : Character
         //매테리얼 교체되는 동안 기다렸다가 파괴
         DOTween.To(() => 1f, (x) => dieMaterial.SetFloat("_Progress", x), 0.14f, dieMaterialDuration)
             .SetDelay(destroyDelayTime).OnComplete(() => Destroy(gameObject)); ;
-
+  
         //animator.Play("Die"); //bool로 조건 만들어줬으니까 주석 처리
         //Destroy(gameObject, destroyDelayTime); //1초 뒤에 게임오브젝트(자기자신)을 파괴)
     }
